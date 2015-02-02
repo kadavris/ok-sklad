@@ -1,0 +1,19 @@
+STRINGTABLE
+BEGIN
+    1, "ОК-Склад"
+    2, "Финансы, Склады и Интернет-магазины"
+    3, "Иристайл"
+    4, "www.OK-Sklad.com"
+    5, "OK-Sklad"
+    6, "Иристайл"
+    7, ""
+    8, ""
+    9, ""
+    10, ""
+    11, "PT1RgngfookrcYnZObUxrRkdick5YTHI5bUwzZDNk"
+    12, "rus"
+END
+ABOUT BITMAP "D:\Projects\pics\logos\about-RUS.bmp"
+SPLASH BITMAP "D:\Projects\pics\logos\splash-RUS.bmp"
+HBANNER BITMAP "D:\Projects\pics\logos\hbanner-RUS.bmp"
+HBANSRV BITMAP "D:\Projects\pics\logos\hbanner-server-RUS.bmp"

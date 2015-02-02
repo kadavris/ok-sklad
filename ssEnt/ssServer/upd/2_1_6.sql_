@@ -1,0 +1,212 @@
+-- remove dummy param from pwbrest_list and 'allwh' in fwbrest line 121
+
+ALTER PROCEDURE SP_WBREST_LIST (
+    fromdate timestamp,
+    todate timestamp,
+    in_checked integer,
+    wh varchar(1024))
+returns (
+    wbillid integer,
+    num varchar(20),
+    ondate timestamp,
+    kaid integer,
+    currid integer,
+    reason varchar(255),
+    checked integer,
+    summall numeric(15,8),
+    wtype integer,
+    nds numeric(15,8),
+    personid integer,
+    summpay numeric(15,8),
+    notes varchar(255),
+    docid integer,
+    summincurr numeric(15,8),
+    currrate numeric(5,5),
+    currname varchar(3),
+    personname varchar(255))
+as
+declare variable v_count integer;
+begin
+  for select wbl.wbillid, wbl.num, wbl.ondate, wbl.currid, wbl.reason,
+    wbl.checked, wbl.summall, wbl.wtype, wbl.nds, wbl.personid, wbl.summpay,
+    wbl.notes, wbl.docid, wbl.summincurr, c.shortname, wbl.onvalue, ka.name, ka.kaid
+  from waybilllist wbl
+    join currency c on c.currid=wbl.currid
+    left join kagent ka on ka.kaid=wbl.personid
+  where wbl.deleted=0
+    and wbl.wtype=5
+    and wbl.ondate between :fromdate and :todate
+  order by wbl.ondate desc
+  into :WBILLID, :NUM, :ONDATE, :CURRID, :REASON, :CHECKED, :SUMMALL, :WTYPE, 
+        :NDS, :PERSONID, :SUMMPAY, :NOTES, :DOCID, :SUMMINCURR, :CURRNAME,
+        :CURRRATE, :PERSONNAME, :KAID
+  do begin
+    if (WH = '*') then begin
+      if ((IN_CHECKED = -1) or (IN_CHECKED = CHECKED))
+        then suspend;
+    end
+    else begin
+      v_count = 0;
+      select count(posid) from waybilldet where wbillid=:WBILLID and valueinstr(:WH, wid)=0
+        into :v_count;
+
+      if ((v_count = 0) and ((IN_CHECKED = -1) or (IN_CHECKED = CHECKED)))
+        then suspend;
+    end
+  end
+end^
+
+
+
+
+
+
+
+
+
+
+ALTER PROCEDURE SP_PLREF 
+returns (
+    isgroup integer,
+    id integer,
+    pid integer,
+    name varchar(255),
+    art varchar(255),
+    msrname varchar(6),
+    remain numeric(15,8),
+    price numeric(15,8),
+    descr varchar(256))
+as
+declare variable tmprem numeric(15,5);
+declare variable tmpprice numeric(15,6);
+declare variable v_ondate date;
+BEGIN
+ for select CAST(0 as integer) IsGroup, mats.matid, -mats.grpid, mats.name,
+            mats.artikul, msr.shortname, mats.labeldescr
+   from materials mats, measures msr
+   where mats.deleted=0 and msr.mid=mats.mid and mats.archived=0
+   into :ISGROUP,:ID,:PID,:NAME,:ART,:MSRNAME,:DESCR
+ do begin
+   TMPREM=null;
+   TMPPRICE=null;
+   select max(ondate) from matremains where matid=:ID
+   into :V_ONDATE;
+
+   select mr.remain, mr.avgprice
+   from matremains mr
+   where mr.matid=:ID and mr.ondate=:V_ONDATE
+
+   into :TMPREM, :TMPPRICE;
+   REMAIN=null;
+   PRICE=null;
+   if (not TMPREM is null) then REMAIN=TMPREM;
+   if (not TMPPRICE is null) then PRICE=TMPPRICE;
+   suspend;
+ end
+
+ DESCR='';
+ for select CAST(1 as integer) as IsGroup, -mg.grpid as id, -mg.pid as pid,
+       CAST(mg.name as varchar(128)) as name, CAST('' as varchar(128)) as art,
+       CAST('' as varchar(6)) as msrname, CAST(null as numeric(18,5)) as remain,
+       CAST(null as numeric(18,6)) as price
+    from matgroup mg
+    where mg.deleted=0
+    into :ISGROUP,:ID,:PID,:NAME,:ART,:MSRNAME,:REMAIN,:PRICE
+ do begin
+   suspend;
+ end
+END^
+
+
+
+
+
+
+
+
+
+
+ALTER PROCEDURE SP_WMAT_GET_BY_WHLIST (
+    in_matid integer,
+    ondate timestamp,
+    wh varchar(1000))
+returns (
+    matid integer,
+    grpid integer,
+    remain numeric(15,8),
+    rsv numeric(15,8),
+    matname varchar(255),
+    msrname varchar(10),
+    artikul varchar(255),
+    avgprice numeric(15,8),
+    grpname varchar(64),
+    num integer)
+as
+declare variable v_ondate timestamp^
+declare variable v_maxdate timestamp^
+declare variable v_posid integer^
+declare variable v_tmp_remain double precision^
+declare variable v_tmp_rsv double precision^
+declare variable v_tmp_avgprice double precision^
+declare variable v_sum double precision^
+declare variable v_sql varchar(2000)^
+declare variable v_sqlex varchar(2000)^
+begin
+  matid = null^
+  rsv = null^
+  remain = null^
+  matname = null^
+  msrname = null^
+  artikul = null^
+  avgprice = null^
+  grpid = null^
+  grpname = null^
+
+  V_SQL = 'select m.matid, m.name, m.artikul, m.num, ms.shortname, mg.name, mg.grpid'||
+          ' from materials m, measures ms, matgroup mg where mg.grpid=m.grpid and m.mid=ms.mid and m.archived=0 '^
+  if (IN_MATID <> 0) then V_SQL = V_SQL||' and m.matid='||cast(IN_MATID as VARCHAR(20))^
+
+  for execute statement V_SQL
+  into :matid, :matname, :artikul, :num, :msrname, :grpname, :grpid do begin
+    remain = 0^
+    avgprice = 0^
+    rsv = 0^
+    v_sum = 0^
+    v_posid = 0^
+    v_maxdate = null^
+    v_ondate = null^
+
+    V_SQLEX = 'select posid, max(ondate) from posremains where matid='||cast(MATID as VARCHAR(20))
+              ||' and ondate<='''||cast(ONDATE as varchar(24))||''''^
+
+    if ( WH <> '-1' ) then V_SQLEX = V_SQLEX || ' and wid in ('||WH||')'^
+    V_SQLEX = V_SQLEX || 'group by posid'^
+
+    for execute statement V_SQLEX
+    into :v_posid, :v_maxdate do begin
+      v_tmp_remain = null^
+      v_tmp_rsv = 0^
+      v_tmp_avgprice = 0^
+
+      select pr.remain, pr.rsv, pr.avgprice
+        from posremains pr
+        where pr.posid=:v_posid and pr.ondate=:v_maxdate
+        into :v_tmp_remain, :v_tmp_rsv, :v_tmp_avgprice^
+
+      if (v_tmp_remain is not null) then begin
+        remain = remain + v_tmp_remain^
+        v_sum = v_sum + (v_tmp_remain * v_tmp_avgprice)^
+        v_ondate = v_maxdate^
+      end
+      rsv = rsv + v_tmp_rsv^
+    end
+
+    remain = formatfloat(remain, -4)^
+    if (remain <> 0) then avgprice = v_sum / remain^
+    if ((remain > 0) and (v_ondate is not null)) then suspend^
+  end
+end;
+
+
+
+

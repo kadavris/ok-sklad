@@ -1,0 +1,31 @@
+D:\Projects\Firebird-local\213\bin\gfix -v -full -user sysdba -password masterkey %*
+@exit
+
+  -activate      activate shadow file for database usage
+  -attach        shutdown new database attachments
+  -buffers       set page buffers <n>
+  -commit        commit transaction <tr / all>
+  -cache         shutdown cache manager
+  -full          validate record fragments (-v)
+  -force         force database shutdown
+  -housekeeping  set sweep interval <n>
+  -ignore        ignore checksum errors
+  -kill          kill all unavailable shadow files
+  -list          show limbo transactions
+  -mend          prepare corrupt database for backup
+  -mode          read_only or read_write
+  -no_update     read-only validation (-v)
+  -online        database online <single / multi / normal>
+  -prompt        prompt for commit/rollback (-l)
+  -password      default password
+  -rollback      rollback transaction <tr / all>
+  -sql_dialect   set database dialect n
+  -sweep         force garbage collection
+  -shut          shutdown <full / single / multi>
+  -two_phase     perform automated two-phase recovery
+  -tran          shutdown transaction startup
+  -use           use full or reserve space for versions
+  -user          default user name
+  -validate      validate database structure
+  -write         write synchronously or asynchronously
+  -z             print software version number

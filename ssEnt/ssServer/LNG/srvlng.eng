@@ -1,0 +1,69 @@
+[Common]
+Err_CantExecScktSrvr=Can't manually start the Borland Socket Server. This is probably due to errors in installation process. Please try to re-enable Socket Server functions from OK-Server's options menu or uninstall and install OK-Server component.
+BetaVer=Beta/RC
+DemoVer=Free Ed.
+Version=Version
+
+[frmAbout]
+rs_NotReg=Unregistered!
+rs_Reg=Registered
+rs_user=Registered to
+rs_email=E-Mail:
+rs_id=Registration #
+rs_maxclients=Max clients #
+rs_BarC=Barcodes
+
+[frmLog]
+Title=Server
+gbLog=Server log view
+btnOK=Close
+
+[frmMain]
+rs_About=About...
+rs_Clients=Active Connections
+rs_Client=Connection
+rs_ConnTime=Start time
+ChangeKey=Change server's key
+rs_CheckTime=Last checked
+rs_mnuLog=Server log
+rs_Props=Options...
+SetKey=Set server's key
+rs_Shutdown=Exit
+
+[frmProps]
+btnRepairSS=Click to reenable automatic Socket Server startup
+gbDebug=Internal tracing facility logging level
+lDebugLevel=Logging amount:
+dl0=0 - None
+dl3=3 - the Truth is beyond this point
+dl5=5 - Medium
+dl10=10 - Extreme
+dl11=Insane (and beyond)
+lLogBackupQuantity=Maximum Log backup copies to keep
+rs_Title=Server setup
+rs_LangLabel=Language:
+rs_LogOptions=Journal
+rs_LoggingProvExec=Log executed queries
+rs_CheckingDeadConn=Check for dead connections
+rs_DontCheckDC=Do not check
+rs_CheckDC=Check every
+rs_Min=min
+rs_DCTimeout=Maximum time to keep apparently dead connection
+rs_Common=Common
+rs_MaxLogSize=Maximum log size
+rs_InMB=Mb
+rs_InKB=Kb
+
+[frmReg]
+FileSel=Text Documents (*.txt)|*.txt|All Files (*.*)|*.*
+HardwareWarn=Please be aware that any of Hot-Plug equipment (Flash, USB to S-ATA, etc...) may interfere with hardware key generation.
+rs_InvalidKey=Invalid key entered. Please try again.
+rs_Registered=Your registration info is succesfully saved
+rs_Title=Server: Registration
+rs_RegText=To register the software, please visit our Web site at %s and enter on the registration page the following hardware ID. Upon receiving the registration code, please enter it into the corresponding field.
+rs_HardwareID=User code
+rs_RegKey=Registration code
+rs_Cancel=Cancel
+rs_Register=Register
+rs_Copy=Copy
+rs_Open=Open

@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="yes"?>  
+<DATAPACKET Version="2.0">
+<METADATA><FIELDS>
+<FIELD attrname="USERID" fieldtype="i4"/>
+<FIELD attrname="GRPID" fieldtype="i4"/>
+<FIELD attrname="LOGIN" fieldtype="string" WIDTH="24"/>
+<FIELD attrname="PASS" fieldtype="string" WIDTH="24"/>
+<FIELD attrname="NAME" fieldtype="string" WIDTH="128"/>
+<FIELD attrname="SYSNAME" fieldtype="string" WIDTH="48"/>
+</FIELDS><PARAMS/></METADATA><ROWDATA>
+<ROW USERID="0" GRPID="1" LOGIN="admin" PASS="1" NAME="Internal Administrator" SYSNAME="SYSDBA"/>
+</ROWDATA></DATAPACKET>

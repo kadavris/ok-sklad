@@ -1,0 +1,22 @@
+[common]
+butClose=Exit
+butLoad=Load
+GetRepNameCap=Report name required
+GetRepNamePromt=Enter the name of this report for the list
+wantRestOrig=Are you really want to restore the original version of the document?
+wantRevert=Are you really want to revert to last edition of the document?
+openRepTitle=Open report file
+
+[menus]
+miCopyEdit=&Copy && Edit
+miEdit=&Edit
+miRestoreOrig=Restore &original
+miRevert=&Revert to last
+
+[errors]
+CopyFile=: file copy error
+errorTitle=Error
+loadreport=Error loading report file
+noMainApp=The main application is not installed. Exitting
+saveorig=: Can't save original version before editing. You will be unable to restore the original document.
+savebak=: Can't save backup file. You will be unable to revert changes.

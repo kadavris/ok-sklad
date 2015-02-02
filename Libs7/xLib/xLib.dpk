@@ -1,0 +1,61 @@
+package xLib;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'xLib'}
+{$IMPLICITBUILD ON}
+{$DEFINE NODESIGN_}
+{$DEFINE PKG}
+{$DEFINE NODESIGN}
+
+requires
+  rtl,
+  vcl,
+  designide,
+  vclx,
+  vcldb,
+  dbrtl,
+  XFile,
+  //ewb,
+  vclie;
+
+contains
+  flImageList in 'flImageList.pas',
+  flLabel in 'flLabel.pas',
+  flListView in 'flListView.pas',
+  VerInf in 'VerInf.pas',
+  xBarCode in 'xBarCode.pas',
+  xBevel in 'xBevel.pas',
+  xButton in 'xButton.pas',
+  xClasses in 'xClasses.pas',
+  xCtrls in 'xCtrls.pas',
+  xGradient in 'xGradient.pas',
+  xGraphUtils in 'xGraphUtils.pas',
+  xLngManager in 'xLngManager.pas',
+  xLog in 'xLog.pas',
+  xNetUtils in 'xNetUtils.pas',
+  xReg in 'xReg.pas',
+  xSpeedButton in 'xSpeedButton.pas',
+  xStrUtils in 'xStrUtils.pas',
+  xStyleContainer in 'xStyleContainer.pas';
+end.

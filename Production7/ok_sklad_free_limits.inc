@@ -1,0 +1,9 @@
+limitCurrenciesCount := 2;
+limitBusinessPartnersCount := 50;
+limitDatabasesCount := 5; //?
+limitDiscCardsCount := 10;
+limitDocumentsCount := 200;
+limitPriceCategoriesCount := 8; //?
+limitProductsCount  := 300;
+limitUsersCount     := 1;
+limitWarehousesCount:= 3;

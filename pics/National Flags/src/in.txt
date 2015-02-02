@@ -1,0 +1,1463 @@
+036
+{{AUS}}
+AU
+Австралия|22px-Fla.png" width="22" height="11" border="0" class="thumbborder" />&#160;Австралия
+
+
+040
+{{AUT}}
+AT
+Австрия|22px-Flb.png" width="22" height="15" border="0" class="thumbborder" />&#160;Австрия
+
+
+031
+{{AZE}}
+AZ
+Азербайджан|22px-Flc.png" width="22" height="11" border="0" class="thumbborder" />&#160;Азербайджан
+
+
+248
+{{ALA}}
+AX
+Аландские острова|22px-Fld.png" width="22" height="14" border="0" class="thumbborder" />&#160;Аландские острова
+
+
+008
+{{ALB}}
+AL
+Албания|22px-Fle.png" width="22" height="16" border="0" class="thumbborder" />&#160;Албания
+
+
+012
+{{DZA}}
+DZ
+Алжир|22px-Flf.png" width="22" height="15" border="0" class="thumbborder" />&#160;Алжир
+
+
+581
+{{UMI}}
+UM
+Внешние малые острова (США)|22px-Flg.png" width="22" height="12" border="0" class="thumbborder" />&#160;Внешние малые острова (США)
+
+
+850
+{{VIR}}
+VI
+Американские Виргинские острова|22px-Flh.png" width="22" height="15" border="0" class="thumbborder" />&#160;Американские Виргинские острова
+
+
+016
+{{ASM}}
+AS
+Американское Самоа|22px-Fli.png" width="22" height="11" border="0" class="thumbborder" />&#160;Американское Самоа
+
+
+660
+{{AIA}}
+AI
+Ангилья|22px-Flj.png" width="22" height="11" border="0" class="thumbborder" />&#160;Ангилья
+
+
+024
+{{AGO}}
+AO
+Ангола|22px-Flk.png" width="22" height="15" border="0" class="thumbborder" />&#160;Ангола
+
+
+020
+{{AND}}
+AD
+Андорра|22px-Fll.png" width="22" height="15" border="0" class="thumbborder" />&#160;Андорра
+
+
+010
+{{ATA}}
+AQ
+Антарктида|22px-Flm.png" width="22" height="15" border="0" class="thumbborder" />&#160;Антарктида
+
+
+028
+{{ATG}}
+AG
+Антигуа и Барбуда|22px-Fln.png" width="22" height="15" border="0" class="thumbborder" />&#160;Антигуа и Барбуда
+
+
+032
+{{ARG}}
+AR
+Аргентина|22px-Flo.png" width="22" height="14" border="0" class="thumbborder" />&#160;Аргентина
+
+
+051
+{{ARM}}
+AM
+Армения|22px-Flp.png" width="22" height="11" border="0" class="thumbborder" />&#160;Армения
+
+
+533
+{{ABW}}
+AW
+Аруба|22px-Flq.png" width="22" height="15" border="0" class="thumbborder" />&#160;Аруба
+
+
+004
+{{AFG}}
+AF
+Афганистан|22px-Flr.png" width="22" height="15" border="0" class="thumbborder" />&#160;Афганистан
+
+
+044
+{{BHS}}
+BS
+Багамские Острова|22px-Fls.png" width="22" height="11" border="0" class="thumbborder" />&#160;Багамы
+
+
+050
+{{BGD}}
+BD
+Бангладеш|22px-Flt.png" width="22" height="13" border="0" class="thumbborder" />&#160;Бангладеш
+
+
+052
+{{BRB}}
+BB
+Барбадос|22px-Flu.png" width="22" height="15" border="0" class="thumbborder" />&#160;Барбадос
+
+
+048
+{{BHR}}
+BH
+Бахрейн|22px-Flv.png" width="22" height="13" border="0" class="thumbborder" />&#160;Бахрейн
+
+
+084
+{{BLZ}}
+BZ
+Белиз|22px-Flw.png" width="22" height="15" border="0" class="thumbborder" />&#160;Белиз
+
+
+112
+{{BLR}}
+BY
+Белоруссия|22px-Flx.png" width="22" height="11" border="0" class="thumbborder" />&#160;Белоруссия
+
+
+056
+{{BEL}}
+BE
+Бельгия|22px-Fly.png" width="22" height="15" border="0" class="thumbborder" />&#160;Бельгия
+
+
+204
+{{BEN}}
+BJ
+Бенин|22px-Flz.png" width="22" height="15" border="0" class="thumbborder" />&#160;Бенин
+
+
+060
+{{BMU}}
+BM
+Бермудские острова|22px-Fm0.png" width="22" height="11" border="0" class="thumbborder" />&#160;Бермуды
+
+
+100
+{{BGR}}
+BG
+Болгария|22px-Fm1.png" width="22" height="13" border="0" class="thumbborder" />&#160;Болгария
+
+
+068
+{{BOL}}
+BO
+Боливия|22px-Fm2.png" width="22" height="15" border="0" class="thumbborder" />&#160;Боливия
+
+
+070
+{{BIH}}
+BA
+Босния и Герцеговина|22px-Fm3.png" width="22" height="11" border="0" class="thumbborder" />&#160;Босния и Герцеговина
+
+
+072
+{{BWA}}
+BW
+Ботсвана|22px-Fm4.png" width="22" height="15" border="0" class="thumbborder" />&#160;Ботсвана
+
+
+076
+{{BRA}}
+BR
+Бразилия|22px-Fm5.png" width="22" height="15" border="0" class="thumbborder" />&#160;Бразилия
+
+
+086
+{{IOT}}
+IO
+Британские территории в Индийском океане|22px-Fm6.png" width="22" height="11" border="0" class="thumbborder" />&#160;Британские территории в Индийском океане
+
+
+092
+{{VGB}}
+VG
+Британские Виргинские острова|22px-Fm7.png" width="22" height="11" border="0" class="thumbborder" />&#160;Британские Виргинские острова
+
+
+096
+{{BRN}}
+BN
+Бруней|22px-Fm8.png" width="22" height="11" border="0" class="thumbborder" />&#160;Бруней
+
+
+854
+{{BFA}}
+BF
+Буркина Фасо|22px-Fm9.png" width="22" height="15" border="0" class="thumbborder" />&#160;Буркина Фасо
+
+
+108
+{{BDI}}
+BI
+Бурунди|22px-FmA.png" width="22" height="13" border="0" class="thumbborder" />&#160;Бурунди
+
+
+064
+{{BTN}}
+BT
+Бутан|22px-FmB.png" width="22" height="15" border="0" class="thumbborder" />&#160;Бутан
+
+
+548
+{{VUT}}
+VU
+Вануату|22px-FmC.png" width="22" height="13" border="0" class="thumbborder" />&#160;Вануату
+
+
+336
+{{VAT}}
+VA
+Ватикан|20px-Fla.png" width="20" height="20" border="0" class="thumbborder" />&#160;Ватикан
+
+
+826
+{{GBR}}
+GB
+Великобритания|22px-FmD.png" width="22" height="11" border="0" class="thumbborder" />&#160;Великобритания
+
+
+348
+{{HUN}}
+HU
+Венгрия|22px-FmE.png" width="22" height="11" border="0" class="thumbborder" />&#160;Венгрия
+
+
+862
+{{VEN}}
+VE
+Венесуэла|22px-FmF.png" width="22" height="15" border="0" class="thumbborder" />&#160;Венесуэла
+
+
+626
+{{TLS}}
+TL
+Восточный Тимор|22px-FmG.png" width="22" height="11" border="0" class="thumbborder" />&#160;Восточный Тимор
+
+
+704
+{{VNM}}
+VN
+Вьетнам|22px-FmH.png" width="22" height="15" border="0" class="thumbborder" />&#160;Вьетнам
+
+
+266
+{{GAB}}
+GA
+Габон|22px-FmI.png" width="22" height="17" border="0" class="thumbborder" />&#160;Габон
+
+
+332
+{{HTI}}
+HT
+Гаити|22px-FmJ.png" width="22" height="13" border="0" class="thumbborder" />&#160;Гаити
+
+
+328
+{{GUY}}
+GY
+Гайана|22px-FmK.png" width="22" height="13" border="0" class="thumbborder" />&#160;Гайана
+
+
+270
+{{GMB}}
+GM
+Гамбия|22px-FmL.png" width="22" height="15" border="0" class="thumbborder" />&#160;Гамбия
+
+
+288
+{{GHA}}
+GH
+Гана|22px-FmM.png" width="22" height="15" border="0" class="thumbborder" />&#160;Гана
+
+
+312
+{{GLP}}
+GP
+Гваделупа|22px-Gua.png" width="22" height="15" border="0" class="thumbborder" />&#160;Гваделупа
+
+
+320
+{{GTM}}
+GT
+Гватемала|22px-FmN.png" width="22" height="14" border="0" class="thumbborder" />&#160;Гватемала
+
+
+324
+{{GIN}}
+GN
+Гвинея|22px-FmO.png" width="22" height="15" border="0" class="thumbborder" />&#160;Гвинея
+
+
+624
+{{GNB}}
+GW
+Гвинея-Бисау|22px-FmP.png" width="22" height="11" border="0" class="thumbborder" />&#160;Гвинея-Бисау
+
+
+276
+{{DEU}}
+DE
+Германия|22px-FmQ.png" width="22" height="13" border="0" class="thumbborder" />&#160;Германия
+
+
+292
+{{GIB}}
+GI
+Гибралтар|22px-FmR.png" width="22" height="11" border="0" class="thumbborder" />&#160;Гибралтар
+
+
+340
+{{HND}}
+HN
+Гондурас|22px-FmS.png" width="22" height="11" border="0" class="thumbborder" />&#160;Гондурас
+
+
+344
+{{HKG}}
+HK
+Гонконг|22px-FmT.png" width="22" height="15" border="0" class="thumbborder" />&#160;Гонконг
+
+
+308
+{{GRD}}
+GD
+Гренада|22px-FmU.png" width="22" height="13" border="0" class="thumbborder" />&#160;Гренада
+
+
+304
+{{GRL}}
+GL
+Гренландия|22px-FmV.png" width="22" height="15" border="0" class="thumbborder" />&#160;Гренландия
+
+
+300
+{{GRC}}
+GR
+Греция|22px-FmW.png" width="22" height="15" border="0" class="thumbborder" />&#160;Греция
+
+
+268
+{{GEO}}
+GE
+Грузия|22px-FmX.png" width="22" height="15" border="0" class="thumbborder" />&#160;Грузия
+
+
+316
+{{GUM}}
+GU
+Гуам|22px-FmY.png" width="22" height="13" border="0" class="thumbborder" />&#160;Гуам
+
+
+208
+{{DNK}}
+DK
+Дания|22px-FmZ.png" width="22" height="17" border="0" class="thumbborder" />&#160;Дания
+
+
+180
+{{COD}}
+CD
+Демократическая Республика Конго|22px-Fn0.png" width="22" height="17" border="0" class="thumbborder" />&#160;ДР Конго
+
+
+262
+{{DJI}}
+DJ
+Джибути|22px-Fn1.png" width="22" height="15" border="0" class="thumbborder" />&#160;Джибути
+
+
+212
+{{DMA}}
+DM
+Доминика|22px-Fn2.png" width="22" height="11" border="0" class="thumbborder" />&#160;Доминика
+
+
+214
+{{DOM}}
+DO
+Доминиканская Республика|22px-Fn3.png" width="22" height="14" border="0" class="thumbborder" />&#160;Доминиканская Республика
+
+
+&#160;???
+&#160;???
+EU
+Флаг ЕС|25px-Fla.png" width="25" height="17" border="0" class="thumbborder" /> Европейский Союз
+
+
+818
+{{EGY}}
+EG
+Египет|22px-Fn4.png" width="22" height="15" border="0" class="thumbborder" />&#160;Египет
+
+
+894
+{{ZMB}}
+ZM
+Замбия|22px-Fn5.png" width="22" height="15" border="0" class="thumbborder" />&#160;Замбия
+
+
+732
+{{ESH}}
+EH
+Западная Сахара|22px-Fn6.png" width="22" height="11" border="0" class="thumbborder" />&#160;Западная Сахара
+
+
+716
+{{ZWE}}
+ZW
+Зимбабве|22px-Fn7.png" width="22" height="11" border="0" class="thumbborder" />&#160;Зимбабве
+
+
+376
+{{ISR}}
+IL
+Израиль|22px-Fn8.png" width="22" height="16" border="0" class="thumbborder" />&#160;Израиль
+
+
+356
+{{IND}}
+IN
+Индия|22px-Fn9.png" width="22" height="15" border="0" class="thumbborder" /> Индия
+
+
+360
+{{IDN}}
+ID
+Индонезия|22px-FnA.png" width="22" height="15" border="0" class="thumbborder" />&#160;Индонезия
+
+
+400
+{{JOR}}
+JO
+Иордания|22px-FnB.png" width="22" height="11" border="0" class="thumbborder" />&#160;Иордания
+
+
+368
+{{IRQ}}
+IQ
+Ирак|22px-FnC.png" width="22" height="15" border="0" class="thumbborder" />&#160;Ирак
+
+
+364
+{{IRN}}
+IR
+Иран|22px-FnD.png" width="22" height="13" border="0" class="thumbborder" />&#160;Иран
+
+
+372
+{{IRL}}
+IE
+Ирландская Республика|22px-FnE.png" width="22" height="11" border="0" class="thumbborder" />&#160;Ирландия
+
+
+352
+{{ISL}}
+IS
+Исландия|22px-FnF.png" width="22" height="16" border="0" class="thumbborder" />&#160;Исландия
+
+
+724
+{{ESP}}
+ES
+Испания|22px-FnG.png" width="22" height="15" border="0" class="thumbborder" />&#160;Испания
+
+
+380
+{{ITA}}
+IT
+Италия|22px-FnH.png" width="22" height="15" border="0" class="thumbborder" />&#160;Италия
+
+
+887
+{{YEM}}
+YE
+Йемен|22px-FnI.png" width="22" height="15" border="0" class="thumbborder" />&#160;Йемен
+
+
+408
+{{PRK}}
+KP
+Корейская Народно-Демократическая Республика|22px-FnJ.png" width="22" height="11" border="0" class="thumbborder" />&#160;КНДР
+
+
+132
+{{CPV}}
+CV
+Кабо-Верде|22px-FnK.png" width="22" height="13" border="0" class="thumbborder" />&#160;Кабо-Верде
+
+
+398
+{{KAZ}}
+KZ
+Казахстан|22px-FnL.png" width="22" height="11" border="0" class="thumbborder" />&#160;Казахстан
+
+
+136
+{{CYM}}
+KY
+Каймановы острова|22px-FnM.png" width="22" height="11" border="0" class="thumbborder" />&#160;Каймановы острова
+
+
+116
+{{KHM}}
+KH
+Камбоджа|22px-FnN.png" width="22" height="15" border="0" class="thumbborder" />&#160;Камбоджа
+
+
+120
+{{CMR}}
+CM
+Камерун|22px-FnO.png" width="22" height="15" border="0" class="thumbborder" />&#160;Камерун
+
+
+124
+{{CAN}}
+CA
+Канада|22px-FnP.png" width="22" height="11" border="0" class="thumbborder" />&#160;Канада
+
+
+634
+{{QAT}}
+QA
+Катар|22px-FnQ.png" width="22" height="9" border="0" class="thumbborder" />&#160;Катар
+
+
+404
+{{KEN}}
+KE
+Кения|22px-FnR.png" width="22" height="15" border="0" class="thumbborder" />&#160;Кения
+
+
+196
+{{CYP}}
+CY
+Кипр|22px-FnS.png" width="22" height="13" border="0" class="thumbborder" />&#160;Кипр
+
+
+417
+{{KGZ}}
+KG
+Киргизия|22px-FnT.png" width="22" height="13" border="0" class="thumbborder" />&#160;Киргизия
+
+
+296
+{{KIR}}
+KI
+Кирибати|22px-FnU.png" width="22" height="11" border="0" class="thumbborder" />&#160;Кирибати
+
+
+156
+{{CHN}}
+CN
+Китайская Народная Республика|22px-FnV.png" width="22" height="15" border="0" class="thumbborder" />&#160;Китай
+
+
+166
+{{CCK}}
+CC
+Кокосовые острова|22px-FnW.png" width="22" height="11" border="0" class="thumbborder" />&#160;Кокосовые острова
+
+
+170
+{{COL}}
+CO
+Колумбия|22px-FnX.png" width="22" height="15" border="0" class="thumbborder" />&#160;Колумбия
+
+
+174
+{{COM}}
+KM
+Коморские Острова|22px-FnY.png" width="22" height="13" border="0" class="thumbborder" />&#160;Коморские Острова
+
+
+188
+{{CRI}}
+CR
+Флаг Коста-Рики|22px-FnZ.png" width="22" height="13" border="0" class="thumbborder" /> Коста-Рика
+
+
+384
+{{CIV}}
+CI
+Кот-д’Ивуар|22px-Fo0.png" width="22" height="15" border="0" class="thumbborder" />&#160;Кот-д’Ивуар
+
+
+192
+{{CUB}}
+CU
+Куба|22px-Fo1.png" width="22" height="11" border="0" class="thumbborder" />&#160;Куба
+
+
+414
+{{KWT}}
+KW
+Кувейт|22px-Fo2.png" width="22" height="11" border="0" class="thumbborder" />&#160;Кувейт
+
+
+418
+{{LAO}}
+LA
+Лаос|22px-Fo3.png" width="22" height="15" border="0" class="thumbborder" />&#160;Лаос
+
+
+428
+{{LVA}}
+LV
+Латвия|22px-Fo4.png" width="22" height="11" border="0" class="thumbborder" />&#160;Латвия
+
+
+426
+{{LSO}}
+LS
+Лесото|22px-Fo5.png" width="22" height="15" border="0" class="thumbborder" />&#160;Лесото
+
+
+430
+{{LBR}}
+LR
+Либерия|22px-Fo6.png" width="22" height="12" border="0" class="thumbborder" />&#160;Либерия
+
+
+422
+{{LBN}}
+LB
+Ливан|22px-Fo7.png" width="22" height="15" border="0" class="thumbborder" />&#160;Ливан
+
+
+434
+{{LBY}}
+LY
+Ливия|22px-Fo8.png" width="22" height="11" border="0" class="thumbborder" />&#160;Ливия
+
+
+440
+{{LTU}}
+LT
+Литва|22px-Fo9.png" width="22" height="13" border="0" class="thumbborder" />&#160;Литва
+
+
+438
+{{LIE}}
+LI
+Лихтенштейн|22px-FoA.png" width="22" height="13" border="0" class="thumbborder" />&#160;Лихтенштейн
+
+
+442
+{{LUX}}
+LU
+Люксембург|22px-FoB.png" width="22" height="13" border="0" class="thumbborder" />&#160;Люксембург
+
+
+480
+{{MUS}}
+MU
+Маврикий|22px-FoC.png" width="22" height="15" border="0" class="thumbborder" />&#160;Маврикий
+
+
+478
+{{MRT}}
+MR
+Мавритания|22px-FoD.png" width="22" height="15" border="0" class="thumbborder" />&#160;Мавритания
+
+
+450
+{{MDG}}
+MG
+Мадагаскар|22px-FoE.png" width="22" height="15" border="0" class="thumbborder" />&#160;Мадагаскар
+
+
+175
+{{MYT}}
+YT
+Майотта|22px-FoF.png" width="22" height="15" border="0" class="thumbborder" />&#160;Майотта
+
+
+446
+{{MAC}}
+MO
+Аомынь|22px-FoG.png" width="22" height="15" border="0" class="thumbborder" />&#160;Аомынь
+
+
+807
+{{MKD}}
+MK
+Республика Македония|22px-FoH.png" width="22" height="11" border="0" class="thumbborder" />&#160;Республика Македония
+
+
+454
+{{MWI}}
+MW
+Малави|22px-FoI.png" width="22" height="15" border="0" class="thumbborder" />&#160;Малави
+
+
+458
+{{MYS}}
+MY
+Малайзия|22px-FoJ.png" width="22" height="11" border="0" class="thumbborder" />&#160;Малайзия
+
+
+466
+{{MLI}}
+ML
+Мали|22px-FoK.png" width="22" height="15" border="0" class="thumbborder" />&#160;Мали
+
+
+462
+{{MDV}}
+MV
+Мальдивы|22px-FoL.png" width="22" height="15" border="0" class="thumbborder" />&#160;Мальдивы
+
+
+470
+{{MLT}}
+MT
+Мальта|22px-FoM.png" width="22" height="15" border="0" class="thumbborder" />&#160;Мальта
+
+
+504
+{{MAR}}
+MA
+Марокко|22px-FoN.png" width="22" height="15" border="0" class="thumbborder" />&#160;Марокко
+
+
+474
+{{MTQ}}
+MQ
+Мартиника|22px-FoO.png" width="22" height="15" border="0" class="thumbborder" />&#160;Мартиника
+
+
+584
+{{MHL}}
+MH
+Маршалловы Острова|22px-FoP.png" width="22" height="12" border="0" class="thumbborder" />&#160;Маршалловы Острова
+
+
+484
+{{MEX}}
+MX
+Мексика|22px-FoQ.png" width="22" height="13" border="0" class="thumbborder" />&#160;Мексика
+
+
+508
+{{MOZ}}
+MZ
+Мозамбик|22px-FoR.png" width="22" height="15" border="0" class="thumbborder" />&#160;Мозамбик
+
+
+498
+{{MDA}}
+MD
+Молдавия|22px-FoS.png" width="22" height="11" border="0" class="thumbborder" />&#160;Молдавия
+
+
+492
+{{MCO}}
+MC
+Монако|22px-FoT.png" width="22" height="18" border="0" class="thumbborder" />&#160;Монако
+
+
+496
+{{MNG}}
+MN
+Монголия|22px-FoU.png" width="22" height="11" border="0" class="thumbborder" />&#160;Монголия
+
+
+500
+{{MSR}}
+MS
+Монтсеррат|22px-FoV.png" width="22" height="11" border="0" class="thumbborder" />&#160;Монтсеррат
+
+
+104
+{{MMR}}
+MM
+Мьянма|22px-FoW.png" width="22" height="12" border="0" class="thumbborder" />&#160;Мьянма
+
+
+516
+{{NAM}}
+NA
+Намибия|22px-FoX.png" width="22" height="15" border="0" class="thumbborder" />&#160;Намибия
+
+
+520
+{{NRU}}
+NR
+Науру|22px-FoY.png" width="22" height="11" border="0" class="thumbborder" />&#160;Науру
+
+
+524
+{{NPL}}
+NP
+Непал|16px-Fla.png" width="16" height="20" border="0" class="thumbborder" />&#160;Непал
+
+
+562
+{{NER}}
+NE
+Нигер|22px-FoZ.png" width="22" height="19" border="0" class="thumbborder" />&#160;Нигер
+
+
+566
+{{NGA}}
+NG
+Нигерия|22px-Fp0.png" width="22" height="11" border="0" class="thumbborder" />&#160;Нигерия
+
+
+530
+{{ANT}}
+AN
+Нидерландские Антильские острова|22px-Fp1.png" width="22" height="15" border="0" class="thumbborder" />&#160;Нидерландские Антильские острова
+
+
+528
+{{NLD}}
+NL
+Нидерланды|22px-Fp2.png" width="22" height="15" border="0" class="thumbborder" />&#160;Нидерланды
+
+
+558
+{{NIC}}
+NI
+Никарагуа|22px-Fp3.png" width="22" height="13" border="0" class="thumbborder" />&#160;Никарагуа
+
+
+570
+{{NIU}}
+NU
+Ниуэ|22px-Fp4.png" width="22" height="11" border="0" class="thumbborder" />&#160;Ниуэ
+
+
+540
+{{NCL}}
+NC
+Новая Каледония|22px-Fp5.png" width="22" height="11" border="0" class="thumbborder" />&#160;Новая Каледония
+
+
+554
+{{NZL}}
+NZ
+Новая Зеландия|22px-Fp6.png" width="22" height="11" border="0" class="thumbborder" />&#160;Новая Зеландия
+
+
+578
+{{NOR}}
+NO
+Норвегия|22px-Fp7.png" width="22" height="16" border="0" class="thumbborder" />&#160;Норвегия
+
+
+784
+{{ARE}}
+AE
+Объединённые Арабские Эмираты|22px-Fp8.png" width="22" height="11" border="0" class="thumbborder" />&#160;ОАЭ
+
+
+512
+{{OMN}}
+OM
+Оман|22px-Fp9.png" width="22" height="11" border="0" class="thumbborder" />&#160;Оман
+
+
+162
+{{CXR}}
+CX
+Остров Рождества (Австралия)|22px-FpA.png" width="22" height="11" border="0" class="thumbborder" />&#160;Остров Рождества
+
+
+184
+{{COK}}
+CK
+Острова Кука|22px-FpB.png" width="22" height="11" border="0" class="thumbborder" />&#160;Острова Кука
+
+
+334
+{{HMD}}
+HM
+Херд и Макдональд|22px-Fla.png" width="22" height="11" border="0" class="thumbborder" />&#160;Херд и Макдональд
+
+
+586
+{{PAK}}
+PK
+Пакистан|22px-FpC.png" width="22" height="15" border="0" class="thumbborder" />&#160;Пакистан
+
+
+585
+{{PLW}}
+PW
+Палау|22px-FpD.png" width="22" height="14" border="0" class="thumbborder" />&#160;Палау
+
+
+275
+{{PSE}}
+PS
+Государство Палестина|22px-FpE.png" width="22" height="11" border="0" class="thumbborder" />&#160;Палестина
+
+
+591
+{{PAN}}
+PA
+Панама|22px-FpF.png" width="22" height="15" border="0" class="thumbborder" />&#160;Панама
+
+
+598
+{{PNG}}
+PG
+Папуа — Новая Гвинея|22px-FpG.png" width="22" height="17" border="0" class="thumbborder" />&#160;Папуа — Новая Гвинея
+
+
+600
+{{PRY}}
+PY
+Парагвай|22px-FpH.png" width="22" height="13" border="0" class="thumbborder" />&#160;Парагвай
+
+
+604
+{{PER}}
+PE
+Перу|22px-FpI.png" width="22" height="15" border="0" class="thumbborder" />&#160;Перу
+
+
+612
+{{PCN}}
+PN
+Острова Питкэрн|22px-FpJ.png" width="22" height="11" border="0" class="thumbborder" />&#160;Острова Питкэрн
+
+
+616
+{{POL}}
+PL
+Польша|22px-FpK.png" width="22" height="14" border="0" class="thumbborder" />&#160;Польша
+
+
+620
+{{PRT}}
+PT
+Португалия|22px-FpL.png" width="22" height="15" border="0" class="thumbborder" />&#160;Португалия
+
+
+630
+{{PRI}}
+PR
+Пуэрто-Рико|22px-FpM.png" width="22" height="15" border="0" class="thumbborder" />&#160;Пуэрто-Рико
+
+
+178
+{{COG}}
+CG
+Республика Конго|22px-FpN.png" width="22" height="15" border="0" class="thumbborder" />&#160;Республика Конго
+
+
+638
+{{REU}}
+RE
+Реюньон|22px-FpO.png" width="22" height="15" border="0" class="thumbborder" />&#160;Реюньон
+
+
+643
+{{RUS}}
+RU
+Россия|22px-FpP.png" width="22" height="15" border="0" class="thumbborder" />&#160;Россия
+
+
+646
+{{RWA}}
+RW
+Руанда|22px-FpQ.png" width="22" height="15" border="0" class="thumbborder" />&#160;Руанда
+
+
+642
+{{ROU}}
+RO
+Румыния|22px-FpR.png" width="22" height="15" border="0" class="thumbborder" />&#160;Румыния
+
+
+840
+{{USA}}
+US
+Соединённые Штаты Америки|22px-Flg.png" width="22" height="12" border="0" class="thumbborder" />&#160;США
+
+
+222
+{{SLV}}
+SV
+Сальвадор|22px-FpS.png" width="22" height="12" border="0" class="thumbborder" />&#160;Сальвадор
+
+
+882
+{{WSM}}
+WS
+Самоа|22px-FpT.png" width="22" height="11" border="0" class="thumbborder" />&#160;Самоа
+
+
+674
+{{SMR}}
+SM
+Сан-Марино|22px-FpU.png" width="22" height="17" border="0" class="thumbborder" />&#160;Сан-Марино
+
+
+678
+{{STP}}
+ST
+Сан-Томе и Принсипи|22px-FpV.png" width="22" height="11" border="0" class="thumbborder" />&#160;Сан-Томе и Принсипи
+
+
+682
+{{SAU}}
+SA
+Саудовская Аравия|22px-FpW.png" width="22" height="15" border="0" class="thumbborder" />&#160;Саудовская Аравия
+
+
+748
+{{SWZ}}
+SZ
+Свазиленд|22px-FpX.png" width="22" height="15" border="0" class="thumbborder" />&#160;Свазиленд
+
+
+744
+{{SJM}}
+SJ
+Флаг Шпицбергена и Ян-Майена|22px-Fp7.png" width="22" height="16" border="0" class="thumbborder" /> Шпицберген и Ян-Майен
+
+
+580
+{{MNP}}
+MP
+Северные Марианские острова|22px-FpY.png" width="22" height="11" border="0" class="thumbborder" />&#160;Северные Марианские острова
+
+
+690
+{{SYC}}
+SC
+Сейшельские Острова|22px-FpZ.png" width="22" height="11" border="0" class="thumbborder" />&#160;Сейшельские Острова
+
+
+686
+{{SEN}}
+SN
+Сенегал|22px-Fq0.png" width="22" height="15" border="0" class="thumbborder" />&#160;Сенегал
+
+
+670
+{{VCT}}
+VC
+Сент-Винсент и Гренадины|22px-Fq1.png" width="22" height="15" border="0" class="thumbborder" />&#160;Сент-Винсент и Гренадины
+
+
+659
+{{KNA}}
+KN
+Сент-Киттс и Невис|22px-Fq2.png" width="22" height="15" border="0" class="thumbborder" />&#160;Сент-Киттс и Невис
+
+
+662
+{{LCA}}
+LC
+Сент-Люсия|22px-Fq3.png" width="22" height="11" border="0" class="thumbborder" />&#160;Сент-Люсия
+
+
+666
+{{SPM}}
+PM
+Сен-Пьер и Микелон|22px-Fq4.png" width="22" height="15" border="0" class="thumbborder" />&#160;Сен-Пьер и Микелон
+
+
+688
+{{SRB}}
+RS
+Сербия|22px-Fq5.png" width="22" height="15" border="0" class="thumbborder" />&#160;Сербия
+
+
+891
+{{SCG}}
+CS
+Сербия и Черногория|22px-Fq6.png" width="22" height="11" border="0" class="thumbborder" />&#160;Сербия и Черногория (действовал до сентября 2006 года)
+
+
+702
+{{SGP}}
+SG
+Сингапур|22px-Fq7.png" width="22" height="15" border="0" class="thumbborder" />&#160;Сингапур
+
+
+760
+{{SYR}}
+SY
+Сирия|22px-Fq8.png" width="22" height="15" border="0" class="thumbborder" />&#160;Сирия
+
+
+703
+{{SVK}}
+SK
+Словакия|22px-Fq9.png" width="22" height="15" border="0" class="thumbborder" />&#160;Словакия
+
+
+705
+{{SVN}}
+SI
+Словения|22px-FqA.png" width="22" height="11" border="0" class="thumbborder" />&#160;Словения
+
+
+090
+{{SLB}}
+SB
+Соломоновы Острова|22px-FqB.png" width="22" height="11" border="0" class="thumbborder" />&#160;Соломоновы Острова
+
+
+706
+{{SOM}}
+SO
+Сомали|22px-FqC.png" width="22" height="15" border="0" class="thumbborder" />&#160;Сомали
+
+
+736
+{{SDN}}
+SD
+Судан|22px-FqD.png" width="22" height="11" border="0" class="thumbborder" />&#160;Судан
+
+
+740
+{{SUR}}
+SR
+Суринам|22px-FqE.png" width="22" height="15" border="0" class="thumbborder" />&#160;Суринам
+
+
+694
+{{SLE}}
+SL
+Сьерра-Леоне|22px-FqF.png" width="22" height="15" border="0" class="thumbborder" />&#160;Сьерра-Леоне
+
+
+810
+{{SUN}}
+SU
+Союз Советских Социалистических Республик|22px-FqG.png" width="22" height="11" border="0" class="thumbborder" />&#160;СССР (действовал до сентября 1992 года)
+
+
+762
+{{TJK}}
+TJ
+Таджикистан|22px-FqH.png" width="22" height="11" border="0" class="thumbborder" />&#160;Таджикистан
+
+
+764
+{{THA}}
+TH
+Таиланд|22px-FqI.png" width="22" height="15" border="0" class="thumbborder" />&#160;Таиланд
+
+
+158
+{{TWN}}
+TW
+Тайвань|22px-FqJ.png" width="22" height="15" border="0" class="thumbborder" />&#160;Тайвань
+
+
+834
+{{TZA}}
+TZ
+Танзания|22px-FqK.png" width="22" height="15" border="0" class="thumbborder" />&#160;Танзания
+
+
+768
+{{TGO}}
+TG
+Того|22px-FqL.png" width="22" height="14" border="0" class="thumbborder" />&#160;Того
+
+
+772
+{{TKL}}
+TK
+Токелау|22px-Fp6.png" width="22" height="11" border="0" class="thumbborder" />&#160;Токелау
+
+
+776
+{{TON}}
+TO
+Тонга|22px-FqM.png" width="22" height="11" border="0" class="thumbborder" />&#160;Тонга
+
+
+780
+{{TTO}}
+TT
+Флаг Тринидада и Тобаго|22px-FqN.png" width="22" height="13" border="0" class="thumbborder" /> Тринидад и Тобаго
+
+
+798
+{{TUV}}
+TV
+Тувалу|22px-FqO.png" width="22" height="11" border="0" class="thumbborder" />&#160;Тувалу
+
+
+788
+{{TUN}}
+TN
+Тунис|22px-FqP.png" width="22" height="15" border="0" class="thumbborder" />&#160;Тунис
+
+
+795
+{{TKM}}
+TM
+Туркмения|22px-FqQ.png" width="22" height="15" border="0" class="thumbborder" />&#160;Туркмения
+
+
+792
+{{TUR}}
+TR
+Флаг Турции|22px-FqR.png" width="22" height="15" border="0" class="thumbborder" /> Турция
+
+
+800
+{{UGA}}
+UG
+Уганда|22px-FqS.png" width="22" height="15" border="0" class="thumbborder" />&#160;Уганда
+
+
+860
+{{UZB}}
+UZ
+Узбекистан|22px-FqT.png" width="22" height="11" border="0" class="thumbborder" />&#160;Узбекистан
+
+
+804
+{{UKR}}
+UA
+Украина|22px-FqU.png" width="22" height="15" border="0" class="thumbborder" />&#160;Украина
+
+
+858
+{{URY}}
+UY
+Уругвай|22px-FqV.png" width="22" height="15" border="0" class="thumbborder" />&#160;Уругвай
+
+
+234
+{{FRO}}
+FO
+Фарерские острова|22px-FqW.png" width="22" height="16" border="0" class="thumbborder" />&#160;Фарерские острова
+
+
+583
+{{FSM}}
+FM
+Федеративные Штаты Микронезии|22px-FqX.png" width="22" height="12" border="0" class="thumbborder" />&#160;Микронезия
+
+
+242
+{{FJI}}
+FJ
+Фиджи|22px-FqY.png" width="22" height="11" border="0" class="thumbborder" />&#160;Фиджи
+
+
+608
+{{PHL}}
+PH
+Филиппины|22px-FqZ.png" width="22" height="11" border="0" class="thumbborder" />&#160;Филиппины
+
+
+246
+{{FIN}}
+FI
+Финляндия|22px-Fr0.png" width="22" height="13" border="0" class="thumbborder" />&#160;Финляндия
+
+
+238
+{{FLK}}
+FK
+Фолклендские острова|22px-Fr1.png" width="22" height="11" border="0" class="thumbborder" />&#160;Фолклендские острова
+
+
+250
+{{FRA}}
+FR
+Франция|22px-FpO.png" width="22" height="15" border="0" class="thumbborder" />&#160;Франция
+
+
+254
+{{GUF}}
+GF
+Французская Гвиана|22px-Fr2.png" width="22" height="15" border="0" class="thumbborder" />&#160;Французская Гвиана
+
+
+258
+{{PYF}}
+PF
+Французская Полинезия|22px-Fr3.png" width="22" height="15" border="0" class="thumbborder" />&#160;Французская Полинезия
+
+
+260
+{{ATF}}
+TF
+Французские Южные и Антарктические Территории|22px-Fr4.png" width="22" height="15" border="0" class="thumbborder" />&#160;Французские Южные и Антарктические Территории
+
+
+191
+{{HRV}}
+HR
+Хорватия|22px-Fr5.png" width="22" height="11" border="0" class="thumbborder" />&#160;Хорватия
+
+
+140
+{{CAF}}
+CF
+Центральноафриканская Республика|22px-Fr6.png" width="22" height="15" border="0" class="thumbborder" />&#160;ЦАР
+
+
+148
+{{TCD}}
+TD
+Чад|22px-Fr7.png" width="22" height="15" border="0" class="thumbborder" />&#160;Чад
+
+
+499
+{{MNE}}
+ME
+Черногория|22px-Fr8.png" width="22" height="11" border="0" class="thumbborder" />&#160;Черногория
+
+
+203
+{{CZE}}
+CZ
+Чехия|22px-Fr9.png" width="22" height="15" border="0" class="thumbborder" />&#160;Чехия
+
+
+152
+{{CHL}}
+CL
+Чили|22px-FrA.png" width="22" height="15" border="0" class="thumbborder" />&#160;Чили
+
+
+756
+{{CHE}}
+CH
+Швейцария|20px-Flb.png" width="20" height="20" border="0" class="thumbborder" />&#160;Швейцария
+
+
+752
+{{SWE}}
+SE
+Швеция|22px-FrB.png" width="22" height="14" border="0" class="thumbborder" />&#160;Швеция
+
+
+144
+{{LKA}}
+LK
+Шри-Ланка|22px-FrC.png" width="22" height="11" border="0" class="thumbborder" />&#160;Шри-Ланка
+
+
+218
+{{ECU}}
+EC
+Эквадор|22px-FrD.png" width="22" height="11" border="0" class="thumbborder" />&#160;Эквадор
+
+
+226
+{{GNQ}}
+GQ
+Экваториальная Гвинея|22px-FrE.png" width="22" height="15" border="0" class="thumbborder" />&#160;Экваториальная Гвинея
+
+
+232
+{{ERI}}
+ER
+Эритрея|22px-FrF.png" width="22" height="11" border="0" class="thumbborder" />&#160;Эритрея
+
+
+233
+{{EST}}
+EE
+Эстония|22px-FrG.png" width="22" height="14" border="0" class="thumbborder" />&#160;Эстония
+
+
+231
+{{ETH}}
+ET
+Эфиопия|22px-FrH.png" width="22" height="11" border="0" class="thumbborder" />&#160;Эфиопия
+
+
+710
+{{ZAF}}
+ZA
+Южно-Африканская Республика|22px-FrI.png" width="22" height="15" border="0" class="thumbborder" />&#160;ЮАР
+
+
+410
+{{KOR}}
+KR
+Республика Корея|22px-FrJ.png" width="22" height="15" border="0" class="thumbborder" />&#160;Республика Корея
+
+
+239
+{{SGS}}
+GS
+Южная Георгия и Южные Сандвичевы острова|22px-FrK.png" width="22" height="11" border="0" class="thumbborder" />&#160;Южная Георгия и Южные Сандвичевы острова
+
+
+388
+{{JAM}}
+JM
+Ямайка|22px-FrL.png" width="22" height="11" border="0" class="thumbborder" />&#160;Ямайка
+
+
+392
+{{JPN}}
+JP
+Япония|22px-FrM.png" width="22" height="15" border="0" class="thumbborder" />&#160;Япония
+
+
+074
+{{BVT}}
+BV
+Остров Буве|22px-Fp7.png" width="22" height="16" border="0" class="thumbborder" />&#160;Остров Буве
+
+
+574
+{{NFK}}
+NF
+Остров Норфолк|22px-FrN.png" width="22" height="11" border="0" class="thumbborder" />&#160;Остров Норфолк
+
+
+654
+{{SHN}}
+SH
+Остров Святой Елены|22px-FrO.png" width="22" height="11" border="0" class="thumbborder" />&#160;Остров Святой Елены
+
+
+796
+{{TCA}}
+TC
+Тёркс и Кайкос|22px-FrP.png" width="22" height="11" border="0" class="thumbborder" />&#160;Тёркс и Кайкос
+
+
+876
+{{WLF}}
+WF
+Уоллис и Футуна|22px-Wal.png" width="22" height="17" border="0" class="thumbborder" />&#160;Уоллис и Футуна
+

@@ -1,0 +1,19 @@
+STRINGTABLE
+BEGIN
+    1, "ОК-Склад"
+    2, "Фiнанси, Склади та Веб-Магазiни"
+    3, "Иристайл"
+    4, "www.OK-Sklad.com"
+    5, "OK-Sklad"
+    6, "Иристайл"
+    7, "d2hHocprfmrftY3VnWFprNVdhdjAyYmo1Q1poeDJhejF5YXY1eWQzZDNMdm9EYzBSSGE="
+    8, "PTBUddjdobbphZWx0bUo1VjJhZnQyWWxoMlk5QTNi"
+    9, "d2hHocprfmrftY3VnWFprNVdhdjAyYmo1Q1poeDJhejF5YXY1eWQzZDNMdm9EYzBSSGE="
+    10, "PTBUddjdobbphZWx0bUo1VjJhZnQyWWxoMlk5QTNi"
+    11, "PT1RgngfookrcYnZObUxrRkdick5YTHI5bUwzZDNk"
+    12, "ukr"
+END
+ABOUT BITMAP "D:\Projects\pics\logos\about-UKR.bmp"
+SPLASH BITMAP "D:\Projects\pics\logos\splash-UKR.bmp"
+HBANNER BITMAP "D:\Projects\pics\logos\hbanner-UKR.bmp"
+HBANSRV BITMAP "D:\Projects\pics\logos\hbanner-server-UKR.bmp"

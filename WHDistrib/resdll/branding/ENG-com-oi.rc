@@ -1,0 +1,19 @@
+STRINGTABLE
+BEGIN
+    1, "OK-Inventory"
+    2, "Finances and Stock Management plus Web Stores"
+    3, "Irystyle"
+    4, "www.OK-Inventory.com"
+    5, "OK-Inventory"
+    6, "OK-Inventory"
+    7, "PT1BmefprlnatY29Cbkw0VkdadWwyTHQ5Mll1a25jdlJuYmxabmJwMXlhdjV5ZDNkM0x2b0RjMFJIYQ=="
+    8, "PTBUddjdobbphZWx0bUo1VjJhZnQyWWxoMlk5QTNi"
+    9, "PT1BmefprlnatY29Cbkw0VkdadWwyTHQ5Mll1a25jdlJuYmxabmJwMXlhdjV5ZDNkM0x2b0RjMFJIYQ=="
+    10, "PTBUddjdobbphZWx0bUo1VjJhZnQyWWxoMlk5QTNi"
+    11, "PTAyijqcbdefqYmo1U2V5OUdkdVZtZHVsV0xyOW1MM2QzZA=="
+    12, "oi,usa"
+END
+ABOUT BITMAP "D:\Projects\pics\logos\about-ENG-oi.bmp"
+SPLASH BITMAP "D:\Projects\pics\logos\splash-ENG-oi.bmp"
+HBANNER BITMAP "D:\Projects\pics\logos\hbanner-ENG-oi.bmp"
+HBANSRV BITMAP "D:\Projects\pics\logos\hbanner-server-ENG-oi.bmp"

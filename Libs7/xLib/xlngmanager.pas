@@ -1,0 +1,799 @@
+unit xLngManager;
+
+interface
+
+uses
+  {$IFNDEF NODESIGN}DesignEditors,{$ENDIF}
+  SysUtils, Classes, IniFiles, Contnrs, xLog;
+
+type
+  TxStorageType = (stText, stDLL);
+
+  TxLngManager = class;
+
+  //------------------------------------------------------------
+  TxLngManItem = class
+    private
+      FParent: TxLngManItem;
+      FText: string;
+      FKeyName: string;
+
+      procedure SetText(const Value: string);
+      procedure SetKeyName(const Value: string);
+
+    public
+      constructor Create(const AKeyName, AText: string; AParent: TxLngManItem = nil); virtual;
+      property KeyName: string read FKeyName write SetKeyName;
+      property Parent: TxLngManItem read FParent write FParent;
+      property Text: string read FText write SetText;
+  end;
+
+  //------------------------------------------------------------
+  TxLngFile = class
+    private
+      FLngFile: TIniFile;
+      FItems: TObjectList;
+      FParent: TxLngManager;
+      FCfgFile: string;
+      FFileName: string;
+      FDesc: string;
+      FLangName: string;
+
+      procedure SetFileName(const Value: string);
+      procedure SetDesc(const Value: string);
+      function  GetItem(Index: Integer): TxLngManItem;
+      function  GetCount: Integer;
+      procedure RecreateIniFile;
+      function  GetIndex: Integer;
+      procedure SetLangName(const Value: string);
+
+    protected
+      function AddItem(const AKeyName, AText: string; AParent: TxLngManItem): TxLngManItem;
+
+    public
+      constructor Create(const ADesc, AFileName, AName, ACfgFile: string); reintroduce;
+      destructor  Destroy; override;
+
+      function  AddItemEx(const AKeyName, AText: string; AParent: TxLngManItem): TxLngManItem;
+      procedure Clear;
+      procedure DropItem(AItem: TxLngManItem);
+      function  GetRS(const ASection, AKeyName: string): string;
+      procedure Load;
+      procedure UpdateItem(AItem: TxLngManItem; const AKeyName, AText: string);
+      function  Read(const ASection, AKey: string): string;
+      procedure Write(const ASection, AKey, AValue: string);
+
+      property CfgFile: string read FCfgFile write FCfgFile;
+      property Count: Integer read GetCount;
+      property Desc: string read FDesc write SetDesc;
+      property FileName: string read FFileName write SetFileName;
+      property LangName: string read FLangName write SetLangName;
+      property Index: Integer read GetIndex;
+      property Items[Index: Integer]: TxLngManItem read GetItem;
+      property Parent: TxLngManager read FParent;
+  end;
+
+  //------------------------------------------------------------
+  TxLngManager = class(TComponent)
+    private
+      FActive: Boolean;
+      FFiles: TObjectList;
+      FModifyOnly: Boolean;
+      FActiveLngIndex: Integer;
+      FStorageType: TxStorageType;
+      FCfgFile: TFileName;
+      FDefaultSection: String;
+
+      procedure SetActive(const Value: Boolean);
+      procedure LoadItems;
+      procedure SetActiveLngIndex(const Value: Integer);
+      function  GetActiveLngFile: TxLngFile;
+      procedure SetStorageType(const Value: TxStorageType);
+      function  GetFile(Index: Integer): TxLngFile;
+      function  GetFilesCount: Integer;
+      procedure SetFile(Index: Integer; const Value: TxLngFile);
+      procedure SetCfgFile(const Value: TFileName);
+      function  ReadCfgFile: Boolean;
+      function  GetActiveLng: string;
+      procedure SetActiveLng(const Value: string);
+      procedure setDefaultSection(const Value: String);
+
+    protected
+      procedure Loaded; override;
+
+    public
+      Logger: TxLog;
+
+      constructor Create(AOwner: TComponent); override;
+      destructor Destroy; override;
+
+      function  AddFile: TxLngFile;
+      procedure DropFile(AIndex: Integer);
+
+      function  GetRS(const ASection, AKeyName: string; emptyIfMissing: Boolean = False): string;
+      procedure Clear;
+      procedure ClearCfg;
+      procedure Open;
+      procedure Close;
+      procedure ShowEditor;
+
+      property ActiveLng: TxLngFile read GetActiveLngFile;
+      property FilesCount: Integer read GetFilesCount;
+      property Files[Index: Integer]: TxLngFile read GetFile write SetFile;
+
+    published
+      property Active: Boolean read FActive write SetActive;
+      property ActiveLngIndex: Integer read FActiveLngIndex write SetActiveLngIndex default -1;
+      property ActiveLngDesc: string read GetActiveLng write SetActiveLng;
+      property CfgFile: TFileName read FCfgFile write SetCfgFile;
+      property DefaultSection: String read FDefaultSection write setDefaultSection;
+      property ModifyOnly: Boolean read FModifyOnly write FModifyOnly default False;
+      property StorageType: TxStorageType read FStorageType write SetStorageType default stText;
+  end;
+
+  //------------------------------------------------------------
+  {$IFNDEF NODESIGN}
+  TxLngManEditor = class(TComponentEditor)
+    public
+      function GetVerb(Index: Integer): string; override;
+      function GetVerbCount: integer; override;
+      procedure ExecuteVerb(Index: Integer); override;
+  end;
+  {$ENDIF}
+
+//==============================================================================================
+//==============================================================================================
+//==============================================================================================
+implementation
+
+uses
+  {$IFNDEF NODESIGN}xLngManDsgn,{$ENDIF}
+  udebug, StrUtils, xStrUtils, ComObj, Dialogs, Controls;
+
+{$IFDEF UDEBUG}var DEBUG_unit_ID: Integer; Debugging: Boolean; DEBUG_group_ID: String = '';{$ENDIF}
+
+//==============================================================================================
+//==============================================================================================
+//==============================================================================================
+//==============================================================================================
+{$IFNDEF NODESIGN}
+procedure TxLngManEditor.ExecuteVerb(Index: Integer);
+begin
+  case Index of
+   0: with TxLngManager(Component) do begin
+        if not Active then Active := True;
+        ShowEditor;
+      end;
+  end;
+end;
+
+//==============================================================================================
+function TxLngManEditor.GetVerb(Index: Integer): string;
+begin
+  case Index of
+    0: Result := 'Items...';
+  end;
+end;
+
+//==============================================================================================
+function TxLngManEditor.GetVerbCount: integer;
+begin
+  Result := 1;
+end;
+{$ENDIF}
+
+//==============================================================================================
+//==============================================================================================
+//==============================================================================================
+//==============================================================================================
+procedure TxLngManager.Clear;
+begin
+  FFiles.Clear;
+end;
+
+//==============================================================================================
+constructor TxLngManager.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+
+  FFiles := TObjectList.Create(True);
+
+  FActiveLngIndex := -1;
+  Logger := nil;
+  FDefaultSection := '';
+end;
+
+//==============================================================================================
+destructor TxLngManager.Destroy;
+begin
+  Clear;
+  FFiles.Destroy;
+
+  inherited;
+end;
+
+//==============================================================================================
+procedure TxLngManager.LoadItems;
+  var
+    i: Integer;
+begin
+  for i := 0 to FilesCount - 1 do begin
+    {$IFDEF UDEBUG}debugInstantLog('TxLngManager.LoadItems: reading lang file ' + Files[i].FileName);{$ENDIF}
+    Files[i].Clear;
+    Files[i].Load;
+  end;
+end;
+
+//==============================================================================================
+procedure TxLngManager.SetActive(const Value: Boolean);
+begin
+  if FActive = Value then Exit;
+
+  FActive := Value;
+
+  if FActive then begin
+    if csLoading in ComponentState then begin
+      FActive := False;
+      ActiveLngIndex := -1;
+      Clear;
+      Exit;
+    end;
+
+    {$IFDEF UDEBUG}debugInstantLog('TxLngManager.SetActive: reading config ' + FCfgFile);{$ENDIF}
+    if not ReadCfgFile then begin
+      if csDesigning in ComponentState
+        then FActive := False
+        else raise Exception.Create('TxLngManager.SetActive: Invalid configuration file: "' + FCfgFile + '"! Check CfgFile property.');
+    end
+    else LoadItems;
+  end;
+
+  if not FActive then begin
+    ActiveLngIndex := -1;
+    Clear;
+  end;
+
+  {$IFDEF UDEBUG}debugInstantLog('TxLngManager.SetActive: set to ' + ifThen(Value, 'ON', 'OFF'));{$ENDIF}
+end;
+
+//==============================================================================================
+procedure TxLngManager.Loaded;
+begin
+  inherited;
+end;
+
+//==============================================================================================
+procedure TxLngManager.ShowEditor;
+begin
+  {$IFNDEF NODESIGN}
+  with TfrmLngManDsgn.Create(nil) do
+    try
+      LngManager := Self;
+      ShowModal;
+
+    finally
+      Free;
+    end;
+  {$ENDIF}
+end;
+
+//==============================================================================================
+function TxLngManager.GetRS(const ASection, AKeyName: string; emptyIfMissing: Boolean = False): string;
+  var
+    i: Integer;
+    sec,key: String;
+begin
+  try // finally
+    if emptyIfMissing
+      then Result := ''
+      else Result := AKeyName + ' of ' + ASection + ' missing!';
+
+    sec := AnsiLowerCase(trim(ASection));
+    if (sec = '') and (FDefaultSection = '') then begin
+      Result := AKeyName;
+      Exit;
+    end;
+
+    {$IFDEF PKG}
+      if FActiveLngindex = -1 then begin // for ready-getting captions @ design time
+        SetActive(True);
+        SetActiveLngIndex(0);
+      end;
+    {$ENDIF}
+
+    if FActiveLngIndex = -1 then Exit; // still bad cfg?
+
+    key := AnsiLowerCase(AKeyName);
+
+    with ActiveLng do try // except
+      if sec <> '' then
+        for i := 0 to Count - 1 do
+          if (Items[i].Parent <> nil) and (0 = AnsiCompareText(Items[i].Parent.KeyName, sec))
+              and (0 = AnsiCompareText(Items[i].KeyName, key)) and (Items[i].Text <> '')
+          then begin
+            Result := Items[i].Text;
+            Exit;
+          end;
+
+      if FDefaultSection <> '' then // not found. trying default
+        for i := 0 to Count - 1 do
+          if (Items[i].Parent <> nil) and (0 = AnsiCompareText(Items[i].Parent.KeyName, FDefaultSection))
+              and (0 = AnsiCompareText(Items[i].KeyName, key)) and (Items[i].Text <> '')
+          then begin
+            Result := Items[i].Text;
+            Exit;
+          end;
+          
+    except
+    end; // with ActiveLng
+
+    {$IFNDEF PKG}
+    if Logger <> nil then Logger.Add('langman: ' + Result);
+    {$ENDIF}
+
+  finally
+  end;
+end;
+
+//==============================================================================================
+procedure TxLngManager.Close;
+begin
+  Active := False;
+end;
+
+//==============================================================================================
+procedure TxLngManager.Open;
+begin
+  Active := True;
+end;
+
+//==============================================================================================
+procedure TxLngManager.SetActiveLngIndex(const Value: Integer);
+begin
+  if ( Value < 0 ) or ( Value > FFiles.Count - 1 )
+    then FActiveLngIndex := -1
+    else FActiveLngIndex := Value;
+end;
+
+//==============================================================================================
+function TxLngManager.GetActiveLngFile: TxLngFile;
+begin
+  Result := TxLngFile(FFiles[FActiveLngIndex]);
+end;
+
+//==============================================================================================
+procedure TxLngManager.SetStorageType(const Value: TxStorageType);
+begin
+  FStorageType := Value;
+end;
+
+//==============================================================================================
+procedure TxLngManager.DropFile(AIndex: Integer);
+begin
+  if Files[AIndex].Desc <> '' then
+    with TIniFile.Create(FCfgFile) do
+    try
+      EraseSection(Files[AIndex].Desc);
+
+    finally
+      Free;
+    end;
+
+  FFiles.Delete(AIndex);
+
+  if AIndex <= FActiveLngIndex then ActiveLngIndex := 0;
+end;
+
+//==============================================================================================
+function TxLngManager.AddFile: TxLngFile;
+begin
+  Result := TxLngFile.Create('', '', '', FCfgFile);
+  Result.FParent := Self;
+  FFiles.Add(Result);
+end;
+
+//==============================================================================================
+function TxLngManager.GetFile(Index: Integer): TxLngFile;
+begin
+  Result := TxLngFile(FFiles[Index]);
+end;
+
+//==============================================================================================
+function TxLngManager.GetFilesCount: Integer;
+begin
+  Result := FFiles.Count;
+end;
+
+//==============================================================================================
+procedure TxLngManager.SetFile(Index: Integer; const Value: TxLngFile);
+  //{$IFDEF UDEBUG}var _udebug: Tdebug;{$ENDIF}
+begin
+  //{$IFDEF UDEBUG}if Debugging then _udebug := Tdebug.Create(debugLevelHigh, DEBUG_unit_ID, 'TxLngManager.SetFile') else _udebug := nil;{$ENDIF}
+  //{$IFDEF UDEBUG}if _udebug <> nil then _udebug.Destroy;{$ENDIF}
+end;
+
+//==============================================================================================
+procedure TxLngManager.SetCfgFile(const Value: TFileName);
+begin
+  Active := False;
+  FCfgFile := Value;
+end;
+
+//==============================================================================================
+function TxLngManager.ReadCfgFile: Boolean;
+  var
+    FCfg: TIniFile;
+    FSec: TStringList;
+    i: Integer;
+    FLngFile: TxLngFile;
+    FDesc, FName, FLangName: string;
+begin
+  Result := False;
+
+  if not FileExists(FCfgFile) then begin
+    ActiveLngIndex := -1;
+    Exit;
+  end;
+
+  try //finally
+    FSec := TStringList.Create;
+    
+    try
+      FCfg := TIniFile.Create(FCfgFile);
+      FCfg.ReadSections(FSec);
+      FFiles.Clear;
+
+      for i := 0 to FSec.Count - 1 do begin
+        FDesc := DelCharsEx(FSec[i], ['[', ']']);
+        FName := FCfg.ReadString(FSec[i], 'FileName', '');
+
+        if FName[2] <> ':'
+          then FName := ExtractFilePath(FCfgFile) + FName; // convert relative path to full
+
+        FLangName := FCfg.ReadString(FSec[i], 'LangName', '');
+        FLngFile := TxLngFile.Create(FDesc, FName, FLangName, FCfgFile);
+        FLngFile.CfgFile := FCfgFile;
+        FLngFile.FParent := Self;
+        FFiles.Add(FLngFile);
+      end;
+
+      Result := True;
+
+    except
+      FFiles.Clear;
+    end;
+
+  finally
+    FSec.Free;
+  end;
+
+  if FFiles.Count > 0 then ActiveLngIndex := 0;
+end;
+
+//==============================================================================================
+function TxLngManager.GetActiveLng: string;
+begin
+  if FActiveLngIndex <> -1
+    then Result := TxLngFile(FFiles[FActiveLngIndex]).Desc
+    else Result := '<not defined>';
+end;
+
+//==============================================================================================
+procedure TxLngManager.SetActiveLng(const Value: string);
+  var
+    i: Integer;
+begin
+  for i := 0 to FilesCount - 1 do
+    if Files[i].Desc = Value then begin
+      ActiveLngIndex := i;
+      Exit;
+    end;
+end;
+
+//==============================================================================================
+procedure TxLngManager.ClearCfg;
+  var
+    i: Integer;
+begin
+  with TIniFile.Create(FCfgFile) do
+    try
+      for i := 0 to FFiles.Count - 1 do
+        if Files[i].Desc <> '' then EraseSection(Files[i].Desc);
+
+    finally
+      Free;
+    end;
+end;
+
+//==============================================================================================
+procedure TxLngManager.setDefaultSection(const Value: String);
+begin
+  if FDefaultSection = AnsiLowerCase(trim(Value)) then Exit;
+
+  FDefaultSection := AnsiLowerCase(trim(Value));
+end;
+
+//==============================================================================================
+//==============================================================================================
+// TxLngManItem
+//==============================================================================================
+//==============================================================================================
+constructor TxLngManItem.Create(const AKeyName, AText: string; AParent: TxLngManItem);
+begin
+  FText := AText;
+  FKeyName := AKeyName;
+  FParent := AParent;
+end;
+
+//==============================================================================================
+procedure TxLngManItem.SetKeyName(const Value: string);
+begin
+  FKeyName := Value;
+end;
+
+//==============================================================================================
+procedure TxLngManItem.SetText(const Value: string);
+begin
+  FText := Value;
+end;
+
+//==============================================================================================
+//==============================================================================================
+// TxLngFile
+//==============================================================================================
+//==============================================================================================
+function TxLngFile.AddItem(const AKeyName, AText: string; AParent: TxLngManItem): TxLngManItem;
+begin
+  Result := TxLngManItem.Create(AKeyName, AText, AParent);
+  FItems.Add(Result);
+end;
+
+//==============================================================================================
+function TxLngFile.AddItemEx(const AKeyName, AText: string; AParent: TxLngManItem): TxLngManItem;
+begin
+  Result := AddItem(AKeyName, AText, AParent);
+
+  //if AParent <> nil then FLngFile.WriteString(AParent.KeyName, AKeyName, AText);
+end;
+
+//==============================================================================================
+procedure TxLngFile.Clear;
+begin
+  FItems.Clear;
+end;
+
+//==============================================================================================
+constructor TxLngFile.Create(const ADesc, AFileName, AName, ACfgFile: string);
+begin
+  inherited Create;
+
+  FLngFile := nil;
+  FItems := TObjectList.Create(True);
+  FDesc := ADesc;
+
+  if AFileName[2] <> ':'
+    then FFileName := ExtractFilePath(ParamStr(0)) + AFileName
+    else FFileName := AFileName;
+
+  FLangName := AName;
+
+  FCfgFile := ACfgFile;
+
+  RecreateIniFile;
+end;
+
+//==============================================================================================
+destructor TxLngFile.Destroy;
+begin
+  if FLngFile <> nil then FreeAndNil(FLngFile);
+  FItems.Free;
+
+  inherited;
+end;
+
+//==============================================================================================
+procedure TxLngFile.DropItem(AItem: TxLngManItem);
+begin
+  {with FLngFile do
+    if AItem.Parent = nil
+      then EraseSection(AItem.KeyName)
+      else DeleteKey(AItem.Parent.KeyName, AItem.KeyName);
+      }
+end;
+
+//==============================================================================================
+function TxLngFile.GetCount: Integer;
+begin
+  Result := FItems.Count;
+end;
+
+//==============================================================================================
+function TxLngFile.GetIndex: Integer;
+begin
+  Result := FParent.FFiles.IndexOf(Self);
+end;
+
+//==============================================================================================
+function TxLngFile.GetItem(Index: Integer): TxLngManItem;
+begin
+  Result := TxLngManItem(FItems[Index]);
+end;
+
+//==============================================================================================
+function TxLngFile.GetRS(const ASection, AKeyName: string): string;
+  var
+    i: Integer;
+begin
+  Result := AKeyName + ' of ' + ASection;
+
+  for i := 0 to Count - 1 do
+    if (Items[i].Parent <> nil) and (0 = AnsiCompareText(Items[i].Parent.KeyName, ASection))
+          and (0 = AnsiCompareText(Items[i].KeyName, AKeyName))
+      then begin
+        Result := Items[i].Text;
+        Exit;
+      end;
+end;
+
+//==============================================================================================
+procedure TxLngFile.Load;
+  var
+    F: TextFile;
+    S: string;
+    p: Integer;
+    FItem, FCurSection: TxLngManItem;
+begin
+  if FFileName = '' then Exit;
+
+  AssignFile(F, FFileName);
+
+  try
+    Reset(F);
+    FCurSection := nil;
+
+    while not Eof(F) do begin
+      Readln(F, S);
+      S := Trim(S);
+
+      if ( S = '' ) or ( s[1] = ';' ) then Continue;
+
+      if S[1] = '[' then begin
+        FItem := AddItem(AnsiLowerCase(AnsiMidStr(s, 2, length(s) - 2 )), '', nil);
+        FCurSection := FItem;
+      end
+      else if 0 <> AnsiPos('=', s) then begin
+        p := AnsiPos('=', s);
+        AddItem( AnsiLowerCase(AnsiMidStr(S, 1, p - 1)), AnsiMidStr(S, p + 1, 999), FCurSection );
+      end;
+    end;
+
+    CloseFile(F);
+
+  except
+    CloseFile(F);
+    raise Exception.Create('Error loading resource file!');
+  end;
+
+  {$IFDEF DEBUG}debugInstantLog('TxLngFile.Load for ' + FFileName + ' OK');{$ENDIF}
+end;
+
+//==============================================================================================
+function TxLngFile.Read(const ASection, AKey: string): string;
+begin
+  if FLngFile <> nil
+    then Result := FLngFile.ReadString(ASection, AKey, '')
+    else Result := '';
+end;
+
+//==============================================================================================
+procedure TxLngFile.RecreateIniFile;
+  var
+    FName: string;
+begin
+  if Assigned(FLngFile) then FreeAndNil(FLngFile);
+
+  if FFileName = '' then Exit;
+
+  FName := FFileName;
+
+  if not FileExists(FName)
+     and (MessageDlg('Resource file "' + FFileName + '" does not exist! Create it?', mtWarning, [mbYes, mbNo], 0) = mrYes)
+  then FileCreate(FName);
+
+  FLngFile := TIniFile.Create(FName);
+end;
+
+//==============================================================================================
+procedure TxLngFile.SetDesc(const Value: string);
+begin
+  if (FCfgFile <> '') and (FDesc <> Value) and (FDesc <> '') then begin
+    with TIniFile.Create(FCfgFile) do
+    try
+      EraseSection(FDesc);
+
+    finally
+      Free;
+    end;
+  end;
+
+  FDesc := Value;
+end;
+
+//==============================================================================================
+procedure TxLngFile.SetFileName(const Value: string);
+begin
+  if (FCfgFile <> '') and (Value <> '') then begin
+    with TIniFile.Create(FCfgFile) do
+    try
+      WriteString(FDesc, 'FileName', Value);
+
+    finally
+      Free;
+    end;
+  end;
+
+  FFileName := Value;
+
+  RecreateIniFile;
+end;
+
+//==============================================================================================
+procedure TxLngFile.SetLangName(const Value: string);
+begin
+  if (FCfgFile <> '') and (Value <> '') then begin
+    with TIniFile.Create(FCfgFile) do
+    try
+      WriteString(FDesc, 'LangName', Value);
+
+    finally
+      Free;
+    end;
+  end;
+
+  FLangName := Value;
+end;
+
+//==============================================================================================
+procedure TxLngFile.UpdateItem(AItem: TxLngManItem; const AKeyName, AText: string);
+  var
+    i: Integer;
+begin
+  {
+  if AItem.Parent = nil then begin
+    FLngFile.EraseSection(AItem.KeyName);
+
+    for i := 1 to Count - 1 do
+      if Items[i].Parent = AItem
+        then FLngFile.WriteString(AKeyName, Items[i].KeyName, Items[i].Text);
+  end
+  else begin
+    if AKeyName <> AItem.KeyName then FLngFile.DeleteKey(AItem.Parent.KeyName, AItem.KeyName);
+
+    FLngFile.WriteString(AItem.Parent.KeyName, AKeyName, AText);
+  end;
+  }
+
+  AItem.Text := AText;
+  AItem.KeyName := AKeyName;
+end;
+
+//==============================================================================================
+procedure TxLngFile.Write(const ASection, AKey, AValue: string);
+begin
+  //FLngFile.WriteString(ASection, AKey, AValue);
+end;
+
+//==============================================================================================
+initialization
+  {$IFDEF UDEBUG}
+  DEBUG_unit_ID := debugRegisterUnit('xLngManager', @Debugging, DEBUG_group_ID);
+  Debugging := False;
+  {$ENDIF}
+
+//==============================================================================================
+finalization
+  {$IFDEF UDEBUG}
+  //debugUnregisterUnit(DEBUG_unit_ID);
+  {$ENDIF}
+
+end.

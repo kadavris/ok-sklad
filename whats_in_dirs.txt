@@ -1,0 +1,12 @@
+.\Libs7
+    Libraries
+.\pics
+    Images
+.\Production7
+    Client application
+.\ssEnt
+    Server application + some server related stuff
+.\Util
+    Various helper apps
+.\WHDistrib
+    Installation and deployment

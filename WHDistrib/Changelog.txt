@@ -1,0 +1,65 @@
++ = Added
+- = Removed
+* = Fixed
+Clt = Client
+Srv = Server
+Lib = Libraries
+
+Developers:
+  ap: Andrej Pakhutin
+
+2.1.5.225x (Built xxxx-xx-xx xx:xx)
+  + Lib|ap: Libraries cleanup, Delphi7Lite port, zeosLib 6.6.6 ;)
+
+
+2.1.5.2286 (Built 2010-04-06 00:56)
+  * Clt|ap: Activation dialog: fixed distr selection crash on bad variant cvt
+  * Clt|ap: Switching databases: now single-user mode dropped before switch
+
+
+2.1.5.2290 (Built 2010-04-07 20:51)
+  * Clt|ap: Pricelist filling from warehouse rests.
+    memds fields[] now set ! readonly on ds copy
+  * Clt|ap: Minor activation problems. Registry storage and check fixes.
+  + Clt|ap: Socket server fixes: -quiet/-silent switches for blocking
+    of trivial notifying dialogs. Checks if service already registered.
+
+
+2.1.5.2292 (Built 2010-04-08 20:35)
+  * Clt|ap: fixed ancient bug of sales price type rounding. Hello Serge! :-[
+
+
+2.1.5.2294 (Built 2010-04-20 00:26)
+  * Srv|ap: IdeInfo2 module for stable HD s/n retrieval
+  + Clt|ap: "Update availble" message from web site.
+
+
+2.1.5.2302 (Built 2010-05-17 01:26)
+  * Clt|ap: web upload fix/cleanup
+  * Clt|ap: minor Win7 compatibility fix
+
+
+2.1.5.2304 (Built 2010-05-31 20:56)
+  * Clt|ap: Business partners data unhided for US rules.
+  * Clt|ap: Inventory statement incorrect prices difference
+  * various cosmetics. (bug reporting, GUI, ...)
+
+
+2.1.5.2306 (Built 2010-06-01 20:56)
+  * Clt|ap: Forms resizing fix for Vista,7 and others. Thanks for Andreas Hausladen for fixunit.
+
+
+2.1.5.2307 (Built 2010-06-11 11:55)
+  * Clt|ap: small usability improvements
+
+
+2.1.5.2307 (Built 2010-06-17 00:37)
+  * Srv|ap: small improvements for Win7
+
+
+2.1.5.2308 (Built 2010-06-28 01:45)
+  * Clt|ap: cosmetics
+
+2.1.5.2313 (Built 2010-11-17 16:04)
+  * Clt|ap: added custom attributes for products. Can be printed in some reports.
+  * Clt|ap: simple tree data caching implemented.

@@ -1,0 +1,71 @@
+AE|United Arab Emirates
+AM|Armenia
+AR|Argentina
+AT|Austria
+AU|Australia
+AZ|Azerbaijan
+BA|Bosnia and Herzegovina
+BE|Belgium
+BG|Bulgaria
+BH|Bahrain
+BM|Bermuda
+BN|Brunei Darussalam
+BR|Brazil
+BY|Belarus
+CA|Canada
+CF|Central African Republic
+CH|Switzerland
+CL|Chile
+CN|China
+CZ|Czech Republic
+DE|Germany
+DK|Denmark
+EE|Estonia
+ES|Spain
+FI|Finland
+FR|France
+GB|United Kingdom
+GE|Georgia
+GR|Greece
+HK|Hong Kong
+HU|Hungary
+IE|Ireland
+IL|Israel
+IN|India
+IT|Italy
+JP|Japan
+KG|Kyrgyzstan
+KR|Korea, Republic of
+KZ|Kazakhstan
+LT|Lithuania
+LU|Luxembourg
+LV|Latvia
+MD|Moldova
+MX|Mexico
+NL|Netherlands
+NO|Norway
+NZ|New Zealand
+PA|Panama
+PE|Peru
+PL|Poland
+PT|Portugal
+RO|Romania
+RS|Serbia
+RU|Russia
+SA|Saudi Arabia
+SD|Sudan
+SE|Sweden
+SG|Singapore
+SI|Slovenia
+SK|Slovakia
+SY|Syrian Arab Republic
+TH|Thailand
+TJ|Tajikistan
+TM|Turkmenistan
+TR|Turkey
+TV|Tuvalu
+TW|Taiwan
+UA|Ukraine
+US|United States
+UZ|Uzbekistan
+VN|Viet Nam

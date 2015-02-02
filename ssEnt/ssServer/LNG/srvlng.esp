@@ -1,0 +1,69 @@
+[Common]
+Err_CantExecScktSrvr=####Can't manually start the Borland Socket Server. This is probably due to errors in installation process. Please try to re-enable Socket Server functions from OK-Server's options menu or uninstall and install OK-Server component.
+Version=Version
+DemoVer=Free Ed.
+BetaVer=Beta/RC
+
+[frmAbout]
+rs_NotReg=Unregistered!
+rs_Reg=Registered
+rs_user=Registered to
+rs_email=E-Mail:
+rs_id=Registration #
+rs_maxclients=Max clients #
+rs_BarC=Barcodes
+
+[frmLog]
+Title=Servidor
+gbLog=Servidor log
+btnOK=OK
+
+[frmMain]
+rs_About=Acerca del programa:
+rs_Clients=Conexiones activas
+rs_Client=Conexion
+rs_ConnTime=Comenzar el trabajo
+ChangeKey=Cambiar la clave del servidor
+rs_CheckTime=Ultima verificacion
+rs_mnuLog=Diario del Servidor
+rs_Props=Opciones...
+SetKey=Entrar la clave del servidor
+rs_Shutdown=Finalizar trabajo
+
+[frmProps]
+btnRepairSS=Haga clic aqui para volver a permitir el socket servidor automatico
+gbDebug=Informacion addicional para el sistema de audit interno
+lDebugLevel=Nivel de detalles:
+dl0=0 - Standard
+dl3=3 - la verdad es mas alla de este punto
+dl5=5 - Media
+dl10=10 - Extrema
+dl11=Loca
+lLogBackupQuantity=Maximo numero de diarios para guardar
+rs_Title=Configuracion del servidor
+rs_LangLabel=Idioma:
+rs_LogOptions=Diario de operaciones
+rs_LoggingProvExec=Registrar consultas ejecutadas
+rs_CheckingDeadConn=Comprobar muertas conexiones
+rs_DontCheckDC=No chequear
+rs_CheckDC=Chequear cada
+rs_Min=min
+rs_DCTimeout=El tiempo maximo para mantener la relacion aparentemente muerto
+rs_Common=Comunes
+rs_MaxLogSize=Tamano maximo del registro
+rs_InMB=Mb
+rs_InKB=Kb
+
+[frmReg]
+FileSel=Archivos textos (*.txt)|*.txt|Todos archivos (*.*)|*.*
+HardwareWarn=Tenga en cuenta que  todos los perifericos de conexion en caliente (Flash, USB, SATA, etc...) pueden afectar la generacion de la clave hardware.
+rs_InvalidKey=Clave introducida no es valida. Por favor, intentelo de nuevo
+rs_Registered=Su informacion de registracion ha sido guardada
+rs_Title=Servidor: Registracion del Programa
+rs_RegText=Para registrar el programa, dirijase a la pagina de registracion de nuestro sitio web (%s) y entre el codigo debajo. Al recibir la clave de registracion, entrela en el campo correspondiente
+rs_HardwareID=Usuario
+rs_RegKey=Clave de registracion
+rs_Cancel=Cancelar
+rs_Register=Registrar
+rs_Copy=Copiar
+rs_Open=Abrir

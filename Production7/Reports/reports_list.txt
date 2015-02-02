@@ -1,0 +1,50 @@
+##    Module            frf                   Name
+-------------------------------------------------
+ 1    rep1.pas                                Краткий отчёт о приходе
+ 2    rep1.pas                                Краткий отчёт о продажах товаров
+                        Rep1_1.frf (chbGrpBy.Checked)
+                        Rep1.frf
+
+ 3    rep3.pas                                Отчёт о продажах по клиентам
+ 4    rep3.pas                                Отчёт о приходе по поставщикам
+                        if chbWithProfit.Checked and (RepID=3) 
+                        then ShowRep('Rep3_1.frf')
+                        else ShowRep('Rep3.frf');
+
+ 5    fAllReports.pas   Kreditors.frf         Список кредиторов (мы должны)
+ 6    fAllReports.pas   Debitors.frf          Список дебеторов (нам должны)
+ 7    Rep7.pas          RepMatRest.frf        Ведомость материальных остатков
+
+ 8    fAllReports.pas                         Отчёт по контрагенту
+                        RepKAAll.frf
+                        RepKAAllBOnly.frf
+
+ 9    rep9.pas          grpmove.frf           Отчёт о движении товара
+
+10    rep10.pas                               Оборотная ведомость
+                        Rep10_1.frf (chbgrpby.checked)
+                        Rep10.frf
+
+11    fAllReports.pas   Rep_DocRegistry.frf   Реестр документов
+
+12    ???
+
+13    fAllReports.pas   RepMatSelPr.frf       Отчёт о продажах с прибылью
+14    Rep14.pas         RepMatSelRank.frf     Рейтинг продаж
+15    fAllReports.pas   DynSel.frf            Динамика продаж
+16    fAllReports.pas   RepExpenses.frf       Отчёт о затратах
+17    rep17.pas         ReplPRvsEx.frf        Отчёт о финансовом результате
+18    fAllReports.pas   RepMatMinRest.frf     Отчёт о минимальных остатках
+
+19    fAllReports.pas                         Оборотная ведомость товара
+                        RepMatTurnPeriod.frf
+                        RepMatTurnPeriod2.frf
+
+20    rep20.pas         RepMatSelSvc.frf      Краткий отчёт о продажах услуг
+21    rep21.pas         Rep21.frf             Краткий отчёт о финансовом результате
+22    RepPersons.pas    RepPersons.frf        Отчёт о работе служащих
+23    RepMoney.pas      RepMoney.frf          Отчёт об оборотах денежных средств
+24    rep24.pas         rep24.frf             Краткий отчёт по договору
+25    rep25.pas         Rep25.frf             Развернутый отчет о приходе
+                
+                

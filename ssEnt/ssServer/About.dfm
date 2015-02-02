@@ -1,0 +1,147 @@
+object frmAbout: TfrmAbout
+  Left = 388
+  Top = 250
+  HorzScrollBar.Visible = False
+  VertScrollBar.Visible = False
+  BorderIcons = []
+  BorderStyle = bsNone
+  Caption = #1054' '#1087#1088#1086#1075#1088#1072#1084#1084#1077'...'
+  ClientHeight = 288
+  ClientWidth = 380
+  Color = clBlack
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  Scaled = False
+  OnCreate = FormCreate
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object imageStd: TImage
+    Left = 0
+    Top = 0
+    Width = 376
+    Height = 285
+    ParentShowHint = False
+    ShowHint = False
+    OnClick = imageStdClick
+  end
+  object lWWW: TLabel
+    Left = 8
+    Top = 254
+    Width = 361
+    Height = 13
+    Cursor = crHandPoint
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'http://www'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsUnderline]
+    ParentFont = False
+    Transparent = True
+    OnClick = lWWWClick
+  end
+  object lRegUserName: TLabel
+    Left = 9
+    Top = 24
+    Width = 356
+    Height = 13
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'user name'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = 6907749
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    Transparent = True
+  end
+  object lRegEMail: TLabel
+    Left = 10
+    Top = 38
+    Width = 355
+    Height = 13
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'email'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = 6907749
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    Transparent = True
+  end
+  object lRegInfo1: TLabel
+    Left = 9
+    Top = 54
+    Width = 356
+    Height = 13
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'reginfo1'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = 6907749
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    Transparent = True
+  end
+  object lRegNo: TLabel
+    Left = 9
+    Top = 9
+    Width = 357
+    Height = 14
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'reg no'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = 6907749
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    Transparent = True
+  end
+  object lVersion: TLabel
+    Left = 8
+    Top = 218
+    Width = 357
+    Height = 13
+    Alignment = taCenter
+    AutoSize = False
+    Caption = #1042#1077#1088#1089#1080#1103' 1.0.4 RU'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = 8416606
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    Transparent = True
+  end
+  object lCopyright: TLabel
+    Left = 8
+    Top = 237
+    Width = 357
+    Height = 13
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'copyright'
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = 8416606
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    Transparent = True
+  end
+end

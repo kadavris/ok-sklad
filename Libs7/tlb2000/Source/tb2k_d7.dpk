@@ -1,0 +1,49 @@
+package tb2k_d7;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'Toolbar2000 Components (Jordan Russell)'}
+{$IMPLICITBUILD OFF}
+{$DEFINE C}
+
+requires
+  vcl,
+  rtl;
+
+contains
+  TB2Version in 'TB2Version.pas',
+  TB2Toolbar in 'TB2Toolbar.pas',
+  TB2Consts in 'TB2Consts.pas',
+  TB2Dock in 'TB2Dock.pas',
+  TB2ExtItems in 'TB2ExtItems.pas',
+  TB2Item in 'TB2Item.pas',
+  TB2Common in 'TB2Common.pas',
+  TB2Hook in 'TB2Hook.pas',
+  TB2ToolWindow in 'TB2ToolWindow.pas',
+  TB2MRU in 'TB2MRU.pas',
+  TB2Anim in 'TB2Anim.pas',
+  TB2MDI in 'TB2MDI.pas',
+  TBSkinPlus in 'TBSkinPlus.pas';
+
+end.
+

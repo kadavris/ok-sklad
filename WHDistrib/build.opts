@@ -1,0 +1,61 @@
+[common]
+-B
+-Q
+-RD:\Projects\Libs7\lib\res
+-R"C:\Program Files\Borland\Delphi7\Lib"
+-UD:\Projects\Libs7\lib\dcp
+-UD:\Projects\Libs7\lib\bpl
+-UD:\Projects\Libs7\lib\dcu
+-RD:\Projects\Libs7\jcl\jvcl\resources\
+-$A8  Aligned record fields               
+-$B-  Full boolean Evaluation             
+-$C-  Evaluate assertions at runtime      
+-$D-  Debug information                   
+-$G+  Use imported data references        
+-$H+  Use long strings by default         
+-$I+  I/O checking                        
+-$J-  Writeable structured consts         
+-$L-  Local debug symbols                 
+-$M-  Runtime type info                   
+-$O+  Optimization                  
+-$P+  Open string params        
+-$Q-  Integer overflow checking 
+-$R-  Range checking            
+-$T-  Typed @ operator          
+-$U-  Pentium(tm)-safe divide   
+-$V+  Strict var-strings        
+-$W-  Generate stack frames     
+-$X+  Extended syntax           
+-$Y-  Symbol reference info     
+-$Z1  Minimum size of enum types
+
+[debug]
+-B
+-Q
+-RD:\Projects\Libs7\lib\res
+-R"C:\Program Files\Borland\Delphi7\Lib"
+-UD:\Projects\Libs7\lib\dcp
+-UD:\Projects\Libs7\lib\bpl
+-UD:\Projects\Libs7\lib\dcu
+-RD:\Projects\Libs7\jcl\jvcl\resources\
+-$A8  Aligned record fields               
+-$B-  Full boolean Evaluation             
+-$C-  Evaluate assertions at runtime      
+-$D+  Debug information                   
+-$G+  Use imported data references        
+-$H+  Use long strings by default         
+-$I+  I/O checking                        
+-$J-  Writeable structured consts         
+-$L+  Local debug symbols                 
+-$M+  Runtime type info                   
+-$O-  Optimization                  
+-$P+  Open string params        
+-$Q-  Integer overflow checking 
+-$R-  Range checking            
+-$T-  Typed @ operator          
+-$U-  Pentium(tm)-safe divide   
+-$V+  Strict var-strings        
+-$W-  Generate stack frames     
+-$X+  Extended syntax           
+-$Y+  Symbol reference info     
+-$Z1  Minimum size of enum types

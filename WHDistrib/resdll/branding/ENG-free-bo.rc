@@ -1,0 +1,19 @@
+STRINGTABLE
+BEGIN
+    1, "Biz-Operator"
+    2, "Finances and Stock Management plus Web Stores"
+    3, "Biz-Operator"
+    4, "www.Biz-Operator.com"
+    5, "Biz-Operator"
+    6, "Biz-Operator"
+    7, ""
+    8, ""
+    9, ""
+    10, ""
+    11, "PTAyijqcbdefqYmo1U2V5OUdkdVZtZHVsV0xyOW1MM2QzZA=="
+    12, "bo,usa"
+END
+ABOUT BITMAP "D:\Projects\pics\logos\about-ENG-bo.bmp"
+SPLASH BITMAP "D:\Projects\pics\logos\splash-ENG-bo.bmp"
+HBANNER BITMAP "D:\Projects\pics\logos\hbanner-ENG-bo.bmp"
+HBANSRV BITMAP "D:\Projects\pics\logos\hbanner-server-ENG-bo.bmp"

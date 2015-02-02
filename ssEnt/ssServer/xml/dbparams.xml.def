@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="yes"?>
+<DATAPACKET Version="2.0">
+ <METADATA>
+  <FIELDS>
+   <FIELD attrname="DBID" fieldtype="i4"/>
+   <FIELD attrname="PARNAME" fieldtype="string" WIDTH="64"/>
+   <FIELD attrname="PARVALUE" fieldtype="string" WIDTH="128"/>
+  </FIELDS>
+  <PARAMS/>
+ </METADATA>
+ <ROWDATA>
+ </ROWDATA>
+</DATAPACKET>

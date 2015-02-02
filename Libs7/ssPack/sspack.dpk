@@ -1,0 +1,96 @@
+package ssPack;
+
+{$R *.res}
+{$R 'okLib.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'SS Pack'}
+{$DEFINE NODESIGN}
+{$DEFINE NODESIGN_}
+{$DEFINE PKG}
+
+requires
+  dxEdtrD6,
+  EQTLD6,
+  EQDBTLD6,
+  ECQDBCD6,
+  EQGridD6,
+  cxCommonEditingVCLD7,
+  cxDataD7,
+  cxEditorsVCLD7,
+  cxExtEditorsVCLD7,
+  cxLibraryVCLD7,
+  cxPageControlVCLD7,
+  cxTreeListVCLD7,
+  dxComnD7,
+  dxDBEdD7,
+  dxEdtrD7,
+  dxThemeD7,
+  FR7,
+  tb2k_d7,
+  xLib,
+  rtl,
+  vcl,
+  vclactnband,
+  vcldb,
+  vclx,
+  dcldb,
+  designide,
+  dsnap,
+  dsnapcon;
+
+contains
+  okEditors in 'okEditors.pas',
+  okFrameList in 'okFrameList.pas',
+  okLabel in 'okLabel.pas',
+  okPeriod in 'okPeriod.pas',
+  okSearchEdit in 'okSearchEdit.pas',
+  ssBevel in 'ssBevel.pas',
+  ssCalcEdit in 'ssCalcEdit.pas',
+  ssCheckBox in 'ssCheckBox.pas',
+  ssClientDataSet in 'ssClientDataSet.pas',
+  ssDataSource in 'ssDataSource.pas',
+  ssDateUtils in 'ssDateUtils.pas',
+  ssDBComboBox in 'ssDBComboBox.pas',
+  ssDBGrid in 'ssDBGrid.pas',
+  ssDBLookupCombo in 'ssDBLookupCombo.pas',
+  ssDBTreeView in 'ssDBTreeView.pas',
+  ssExcel in 'ssExcel.pas',
+  ssFormStorage in 'ssFormStorage.pas',
+  ssGradientPanel in 'ssGradientPanel.pas',
+  ssGraphUtil in 'ssGraphUtil.pas',
+  ssGroupBox in 'ssGroupBox.pas',
+  ssImagePanel in 'ssImagePanel.pas',
+  //ssInspector in 'ssInspector.pas',
+  ssLabel in 'ssLabel.pas',
+  ssMemDS in 'ssMemDS.pas',
+  ssPackReg in 'ssPackReg.pas',
+  ssPageControl in 'ssPageControl.pas',
+  ssPanel in 'ssPanel.pas',
+  ssPeriod in 'ssPeriod.pas',
+  ssPopupMenu in 'ssPopupMenu.pas',
+  ssPopupTreeEdit in 'ssPopupTreeEdit.pas',
+  ssSocketConnection in 'ssSocketConnection.pas',
+  ssSpeedButton in 'ssSpeedButton.pas',
+  ssXLSExport in 'ssXLSExport.pas';
+
+end.

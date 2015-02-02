@@ -1,0 +1,216 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{936DF433-6440-421D-92C7-FF40DD8051A4}</ProjectGuid>
+			<MainSource>sspack.dpk</MainSource>
+			<Config Condition="'$(Config)'==''">Release</Config>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+			<ProjectVersion>12.0</ProjectVersion>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DesignOnlyPackage>false</DesignOnlyPackage>
+			<DCC_UnitSearchPath>..\lib\dcp;..\lib\dcu;..\lib\res;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+			<DCC_Define>NODESIGN;NODESIGN_;PKG;$(DCC_Define)</DCC_Define>
+			<DCC_DependencyCheckOutputName>D:\Documents and Settings\All Users\Documents\RAD Studio\6.0\Bpl\sspack.bpl</DCC_DependencyCheckOutputName>
+			<DCC_Description>SS Pack</DCC_Description>
+			<GenDll>true</GenDll>
+			<GenPackage>true</GenPackage>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_ImageBase>00400000</DCC_ImageBase>
+			<DCC_Platform>x86</DCC_Platform>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_DebugInformation>false</DCC_DebugInformation>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="sspack.dpk">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="okLib.dcr"/>
+			<DCCReference Include="dxEdtrD6.dcp"/>
+			<DCCReference Include="EQTLD6.dcp"/>
+			<DCCReference Include="EQDBTLD6.dcp"/>
+			<DCCReference Include="ECQDBCD6.dcp"/>
+			<DCCReference Include="EQGridD6.dcp"/>
+			<DCCReference Include="dxInsD6.dcp"/>
+			<DCCReference Include="cxCommonEditingVCLD7.dcp"/>
+			<DCCReference Include="cxDataD7.dcp"/>
+			<DCCReference Include="cxEditorsVCLD7.dcp"/>
+			<DCCReference Include="cxExtEditorsVCLD7.dcp"/>
+			<DCCReference Include="cxLibraryVCLD7.dcp"/>
+			<DCCReference Include="cxPageControlVCLD7.dcp"/>
+			<DCCReference Include="cxTreeListVCLD7.dcp"/>
+			<DCCReference Include="dxComnD7.dcp"/>
+			<DCCReference Include="dxDBEdD7.dcp"/>
+			<DCCReference Include="dxEdtrD7.dcp"/>
+			<DCCReference Include="dxThemeD7.dcp"/>
+			<DCCReference Include="FR7.dcp"/>
+			<DCCReference Include="tb2k_d7.dcp"/>
+			<DCCReference Include="xLib.dcp"/>
+			<DCCReference Include="rtl.dcp"/>
+			<DCCReference Include="vcl.dcp"/>
+			<DCCReference Include="vclactnband.dcp"/>
+			<DCCReference Include="vcldb.dcp"/>
+			<DCCReference Include="vclx.dcp"/>
+			<DCCReference Include="dcldb.dcp"/>
+			<DCCReference Include="designide.dcp"/>
+			<DCCReference Include="dsnap.dcp"/>
+			<DCCReference Include="dsnapcon.dcp"/>
+			<DCCReference Include="okEditors.pas"/>
+			<DCCReference Include="okFrameList.pas"/>
+			<DCCReference Include="okLabel.pas"/>
+			<DCCReference Include="okPeriod.pas"/>
+			<DCCReference Include="okSearchEdit.pas"/>
+			<DCCReference Include="ssBevel.pas"/>
+			<DCCReference Include="ssCalcEdit.pas"/>
+			<DCCReference Include="ssCheckBox.pas"/>
+			<DCCReference Include="ssClientDataSet.pas"/>
+			<DCCReference Include="ssDataSource.pas"/>
+			<DCCReference Include="ssDateUtils.pas"/>
+			<DCCReference Include="ssDBComboBox.pas"/>
+			<DCCReference Include="ssDBGrid.pas"/>
+			<DCCReference Include="ssDBLookupCombo.pas"/>
+			<DCCReference Include="ssDBTreeView.pas"/>
+			<DCCReference Include="ssExcel.pas"/>
+			<DCCReference Include="ssFormStorage.pas"/>
+			<DCCReference Include="ssGradientPanel.pas"/>
+			<DCCReference Include="ssGraphUtil.pas"/>
+			<DCCReference Include="ssGroupBox.pas"/>
+			<DCCReference Include="ssImagePanel.pas"/>
+			<DCCReference Include="ssInspector.pas"/>
+			<DCCReference Include="ssLabel.pas"/>
+			<DCCReference Include="ssMemDS.pas"/>
+			<DCCReference Include="ssPackReg.pas"/>
+			<DCCReference Include="ssPageControl.pas"/>
+			<DCCReference Include="ssPanel.pas"/>
+			<DCCReference Include="ssPeriod.pas"/>
+			<DCCReference Include="ssPopupMenu.pas"/>
+			<DCCReference Include="ssPopupTreeEdit.pas"/>
+			<DCCReference Include="ssSocketConnection.pas"/>
+			<DCCReference Include="ssSpeedButton.pas"/>
+			<DCCReference Include="ssXLSExport.pas"/>
+			<DCCReference Include="okLib.dcr"/>
+			<DCCReference Include="dclECQDBCD6.dcp"/>
+			<DCCReference Include="dclEQDBTLD6.dcp"/>
+			<DCCReference Include="dclEQGridD6.dcp"/>
+			<DCCReference Include="dclEQTLD6.dcp"/>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType>Package</Borland.ProjectType>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Source>
+						<Source Name="MainSource">sspack.dpk</Source>
+					</Source>
+					<Parameters>
+						<Parameters Name="UseLauncher">False</Parameters>
+						<Parameters Name="LoadAllSymbols">True</Parameters>
+						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+					</Parameters>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">2</VersionInfo>
+						<VersionInfo Name="Build">1</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1033</VersionInfo>
+						<VersionInfo Name="CodePage">1252</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName">Irystyle</VersionInfoKeys>
+						<VersionInfoKeys Name="FileDescription">ssPack</VersionInfoKeys>
+						<VersionInfoKeys Name="FileVersion">1.0.2.1</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName">pileofcrap</VersionInfoKeys>
+						<VersionInfoKeys Name="LegalCopyright">SS,AP</VersionInfoKeys>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName"/>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+					</VersionInfoKeys>
+					<Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\EQTLD6.bpl">ExpressQuantumTreeList by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\dxEdtrD6.bpl">Express inplace editors</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\dxcomnd6.bpl">ExpressCommonLibrary by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\ECQDBCD6.bpl">ExpressQuantumDBControl by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\dxDBEdD6.bpl">Express data-aware inplace editors</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\cxCommonEditingVCLD7.bpl">Express Cross Platform Common Editing Library (VCL Edition) by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\cxLibraryVCLD7.bpl">Express Cross Platform Library (VCL Edition) by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\cxEditorsVCLD7.bpl">ExpressEditors Library 4 (VCL Edition) by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\cxExtEditorsVCLD7.bpl">ExpressExtendedEditors Library 4 (VCL Edition) by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\cxDataD7.bpl">ExpressDataController by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\dxThemeD7.bpl">Express XP Theme Manager by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\cxGridUtilsVCLD7.bpl">ExpressQuantumGrid 4 Utils (VCL Edition) by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\cxGridVCLD7.bpl">ExpressQuantumGrid 4 (VCL Edition) by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\cxPageControlVCLD7.bpl">Express Cross Platform PageControl (VCL Edition) by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\cxTreeListVCLD7.bpl">ExpressQuantumTreeList 4 (VCL Edition) by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\EQDBTLD6.bpl">ExpressQuantumDBTreeList by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\ZDbc110.bpl">Zeos Low Level Database API</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\ZCore110.bpl">Zeos Core Classes and Interfaces</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\ZParseSql110.bpl">Zeos SQL Parsing Classes and Interfaces</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\dxEdtrD7.bpl">Express inplace editors</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\dxComnD7.bpl">ExpressCommonLibrary by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\EQGridD6.bpl">ExpressQuantumGrid by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\dxBarD7.bpl">ExpressBars by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\dxBarDBNavD7.bpl">ExpressBars DBNavigator by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\dxBarExtDBItemsD7.bpl">ExpressBars extended DB items by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\dxBarExtItemsD7.bpl">ExpressBars extended items by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\dxdbtrD7.bpl">ExpressDBTree by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\dxDockingD7.bpl">ExpressDocking Library by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\dxExELD6.bpl">ExpressEditors Library (Extended) by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\dxFlowChartD7.bpl">ExpressFlowChart by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\dxMasterViewD7.bpl">ExpressMasterView by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\dxmdsD7.bpl">ExpressMemData by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\dxsbD7.bpl">ExpressSideBar by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\dxtrmdD7.bpl">ExpressTreePrintedDataSet by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\cxExportVCLD7.bpl">Express Cross Platform Export Library (VCL Edition) by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\dxGrEdD6.bpl">Express extended inplace editors</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\dxInsD6.bpl">ExpressInspector by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="d:\projects\libs7\lib\bpl\dxDBEdD7.bpl">Express data-aware inplace editors</Excluded_Packages>
+						<Excluded_Packages Name="$(BDS)\bin\bcboffice2k120.bpl">CodeGear C++Builder Office 2000 Servers Package</Excluded_Packages>
+						<Excluded_Packages Name="$(BDS)\bin\bcbofficexp120.bpl">CodeGear C++Builder Office XP Servers Package</Excluded_Packages>
+						<Excluded_Packages Name="$(BDS)\bin\dcloffice2k120.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDS)\bin\dclofficexp120.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+					</Excluded_Packages>
+				</Delphi.Personality>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>

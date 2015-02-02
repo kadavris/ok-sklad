@@ -1,0 +1,1 @@
+fixconf "c:\program files\firebird\firebird.conf" c:\program$files\operator\sklad\server\ext

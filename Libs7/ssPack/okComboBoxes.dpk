@@ -1,0 +1,44 @@
+package okComboBoxes;
+
+//{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS OFF}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS OFF}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'OK Combo Boxes'}
+{$IMPLICITBUILD ON}
+{$DEFINE NODESIGN}
+{$DEFINE NODESIGN_}
+{$DEFINE PKG}
+
+requires
+  rtl,
+  vcl,
+  FR7,
+  dbrtl,
+  vcldb,
+  designide,
+  vclx;
+
+contains
+  okComboBoxesreg in 'okComboBoxesreg.pas',
+  okFontComboBox in 'okFontComboBox.pas';
+
+end.

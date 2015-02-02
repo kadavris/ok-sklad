@@ -1,0 +1,28 @@
+Compiler: delphi 7
+Database: FireBird SQL V2.1.3
+Installation: NSIS
+Scripting: perl 5
+
+-------------------------------------------
+Free libraries:
+    JEDI Code Library v 2.2
+        in .\libs7\jcl
+    TRegExpr by Andrey V. Sorokin
+        in .\libs7\regexpr
+    SysInfo by Peter Johnson
+        in .\libs7\Hardware\ddsysinfo
+    IdeSN by Alex Konshin
+        in .\libs7\Hardware\idesn
+    Toolbar2000 by Jordan Russell
+        in .\libs7\Hardware\tlb2000
+    ZeosDBO v6.6.6
+        in .\libs7\ZeosDBO\666
+
+-------------------------------------------
+Commercial libraries:
+    Fast Reports V2
+        in .\libs7\FR252
+    Developer Express Inc. Copyright (C) 1998-2003 Developer Express Inc.
+        in .\libs7\de
+    TXLSFile library v.3.1 and XLSExport components v.1.1 SM Software
+        in .\libs7\X-File

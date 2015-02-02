@@ -1,0 +1,24 @@
+C:\WINNT\system32\wsock32.dll
+C:\WINNT\system32\WS2_32.DLL
+C:\WINNT\system32\WS2HELP.DLL
+C:\WINNT\system32\oledlg.dll
+C:\WINNT\system32\winmm.dll
+C:\WINNT\system32\IMM32.DLL
+C:\WINNT\system32\mmdrv.dll
+C:\WINNT\system32\INDICDLL.dll
+C:\WINNT\system32\RICHED20.DLL
+C:\WINNT\system32\MSIMG32.DLL
+C:\WINNT\system32\GDS32.DLL
+C:\WINNT\system32\MSVCP60.dll
+C:\WINNT\system32\rpcss.dll
+C:\WINNT\system32\CLBCATQ.DLL
+C:\WINNT\system32\midas.dll
+
+C:\WINNT\system32\rtl70.bpl
+C:\WINNT\system32\vcl70.bpl
+C:\WINNT\system32\dsnap70.bpl
+C:\WINNT\system32\dbrtl70.bpl
+C:\WINNT\system32\vcldb70.bpl
+C:\Program Files\Borland\Delphi7\Projects\Bpl\RxCtl7.bpl
+C:\WINNT\system32\vclx70.bpl
+C:\WINNT\system32\VclSmp70.bpl
