@@ -24,6 +24,7 @@
 
 # Delphi compiler-generated binaries (safe to delete)
 *.exe
+!ok-sklad-keygen.exe
 *.dll
 *.bpl
 *.bpi
